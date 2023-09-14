@@ -1,0 +1,804 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-edit" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel ep_agregada edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Volver a la lista</button>
+	{END message_back_button}
+{BEGIN message_view_page_button}
+		<a class="btn btn-sm btn-default" href="ep_agregada_view.php?{$editlink}" {$view_page_button_attrs}>Ver</a>
+{END message_view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN UEJ_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UEJ}  r-vertical-field" 
+	data-signal-error-for="UEJ{$id}" {$required_attr_UEJ}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="UEJ" data-fieldname="UEJ" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_UEJ}">
+		{BEGIN UEJ_label}{$label ep_agregada UEJ }{END UEJ_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$UEJ_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="UEJ" {$tooltipAttr ep_agregada UEJ } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada UEJ }		</div>
+	</div>
+</div>
+
+
+{END UEJ_fieldblock}
+											
+{BEGIN NOMBRE_UEJ_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_NOMBRE_UEJ}  r-vertical-field" 
+	data-signal-error-for="NOMBRE_UEJ{$id}" {$required_attr_NOMBRE_UEJ}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="NOMBRE_UEJ" data-fieldname="NOMBRE UEJ" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_NOMBRE_UEJ}">
+		{BEGIN NOMBRE_UEJ_label}{$label ep_agregada NOMBRE_UEJ }{END NOMBRE_UEJ_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$NOMBRE_UEJ_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="NOMBRE_UEJ" {$tooltipAttr ep_agregada NOMBRE_UEJ } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada NOMBRE_UEJ }		</div>
+	</div>
+</div>
+
+
+{END NOMBRE_UEJ_fieldblock}
+											
+{BEGIN RUBRO_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_RUBRO}  r-vertical-field" 
+	data-signal-error-for="RUBRO{$id}" {$required_attr_RUBRO}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="RUBRO" data-fieldname="RUBRO" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_RUBRO}">
+		{BEGIN RUBRO_label}{$label ep_agregada RUBRO }{END RUBRO_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$RUBRO_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="RUBRO" {$tooltipAttr ep_agregada RUBRO } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada RUBRO }		</div>
+	</div>
+</div>
+
+
+{END RUBRO_fieldblock}
+											
+{BEGIN TIPO_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TIPO}  r-vertical-field" 
+	data-signal-error-for="TIPO{$id}" {$required_attr_TIPO}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="TIPO" data-fieldname="TIPO" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_TIPO}">
+		{BEGIN TIPO_label}{$label ep_agregada TIPO }{END TIPO_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$TIPO_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="TIPO" {$tooltipAttr ep_agregada TIPO } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada TIPO }		</div>
+	</div>
+</div>
+
+
+{END TIPO_fieldblock}
+											
+{BEGIN CTA_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CTA}  r-vertical-field" 
+	data-signal-error-for="CTA{$id}" {$required_attr_CTA}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="CTA" data-fieldname="CTA" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CTA}">
+		{BEGIN CTA_label}{$label ep_agregada CTA }{END CTA_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$CTA_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CTA" {$tooltipAttr ep_agregada CTA } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada CTA }		</div>
+	</div>
+</div>
+
+
+{END CTA_fieldblock}
+											
+{BEGIN SUBCTA_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SUBCTA}  r-vertical-field" 
+	data-signal-error-for="SUBCTA{$id}" {$required_attr_SUBCTA}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="SUBCTA" data-fieldname="SUBCTA" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_SUBCTA}">
+		{BEGIN SUBCTA_label}{$label ep_agregada SUBCTA }{END SUBCTA_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$SUBCTA_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="SUBCTA" {$tooltipAttr ep_agregada SUBCTA } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada SUBCTA }		</div>
+	</div>
+</div>
+
+
+{END SUBCTA_fieldblock}
+											
+{BEGIN OBJ_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_OBJ}  r-vertical-field" 
+	data-signal-error-for="OBJ{$id}" {$required_attr_OBJ}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="OBJ" data-fieldname="OBJ" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_OBJ}">
+		{BEGIN OBJ_label}{$label ep_agregada OBJ }{END OBJ_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$OBJ_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="OBJ" {$tooltipAttr ep_agregada OBJ } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada OBJ }		</div>
+	</div>
+</div>
+
+
+{END OBJ_fieldblock}
+											
+{BEGIN ORD_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ORD}  r-vertical-field" 
+	data-signal-error-for="ORD{$id}" {$required_attr_ORD}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="ORD" data-fieldname="ORD" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ORD}">
+		{BEGIN ORD_label}{$label ep_agregada ORD }{END ORD_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$ORD_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ORD" {$tooltipAttr ep_agregada ORD } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada ORD }		</div>
+	</div>
+</div>
+
+
+{END ORD_fieldblock}
+											
+{BEGIN SORORD_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SORORD}  r-vertical-field" 
+	data-signal-error-for="SORORD{$id}" {$required_attr_SORORD}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="SORORD" data-fieldname="SORORD" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_SORORD}">
+		{BEGIN SORORD_label}{$label ep_agregada SORORD }{END SORORD_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$SORORD_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="SORORD" {$tooltipAttr ep_agregada SORORD } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada SORORD }		</div>
+	</div>
+</div>
+
+
+{END SORORD_fieldblock}
+											
+{BEGIN ITEM_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ITEM}  r-vertical-field" 
+	data-signal-error-for="ITEM{$id}" {$required_attr_ITEM}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="ITEM" data-fieldname="ITEM" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ITEM}">
+		{BEGIN ITEM_label}{$label ep_agregada ITEM }{END ITEM_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$ITEM_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ITEM" {$tooltipAttr ep_agregada ITEM } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada ITEM }		</div>
+	</div>
+</div>
+
+
+{END ITEM_fieldblock}
+											
+{BEGIN SUBITEM_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SUBITEM}  r-vertical-field" 
+	data-signal-error-for="SUBITEM{$id}" {$required_attr_SUBITEM}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="SUBITEM" data-fieldname="SUBITEM" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_SUBITEM}">
+		{BEGIN SUBITEM_label}{$label ep_agregada SUBITEM }{END SUBITEM_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$SUBITEM_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="SUBITEM" {$tooltipAttr ep_agregada SUBITEM } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada SUBITEM }		</div>
+	</div>
+</div>
+
+
+{END SUBITEM_fieldblock}
+											
+{BEGIN SUBITEM2_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SUBITEM2}  r-vertical-field" 
+	data-signal-error-for="SUBITEM2{$id}" {$required_attr_SUBITEM2}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="SUBITEM2" data-fieldname="SUBITEM2" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_SUBITEM2}">
+		{BEGIN SUBITEM2_label}{$label ep_agregada SUBITEM2 }{END SUBITEM2_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$SUBITEM2_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="SUBITEM2" {$tooltipAttr ep_agregada SUBITEM2 } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada SUBITEM2 }		</div>
+	</div>
+</div>
+
+
+{END SUBITEM2_fieldblock}
+											
+{BEGIN FUENTE_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FUENTE}  r-vertical-field" 
+	data-signal-error-for="FUENTE{$id}" {$required_attr_FUENTE}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="FUENTE" data-fieldname="FUENTE" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_FUENTE}">
+		{BEGIN FUENTE_label}{$label ep_agregada FUENTE }{END FUENTE_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$FUENTE_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="FUENTE" {$tooltipAttr ep_agregada FUENTE } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada FUENTE }		</div>
+	</div>
+</div>
+
+
+{END FUENTE_fieldblock}
+											
+{BEGIN REC_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_REC}  r-vertical-field" 
+	data-signal-error-for="REC{$id}" {$required_attr_REC}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="REC" data-fieldname="REC" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_REC}">
+		{BEGIN REC_label}{$label ep_agregada REC }{END REC_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$REC_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="REC" {$tooltipAttr ep_agregada REC } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada REC }		</div>
+	</div>
+</div>
+
+
+{END REC_fieldblock}
+											
+{BEGIN SIT_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SIT}  r-vertical-field" 
+	data-signal-error-for="SIT{$id}" {$required_attr_SIT}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="SIT" data-fieldname="SIT" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_SIT}">
+		{BEGIN SIT_label}{$label ep_agregada SIT }{END SIT_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$SIT_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="SIT" {$tooltipAttr ep_agregada SIT } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada SIT }		</div>
+	</div>
+</div>
+
+
+{END SIT_fieldblock}
+											
+{BEGIN DESCRIPCION_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DESCRIPCION}  r-vertical-field" 
+	data-signal-error-for="DESCRIPCION{$id}" {$required_attr_DESCRIPCION}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="DESCRIPCION" data-fieldname="DESCRIPCION" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_DESCRIPCION}">
+		{BEGIN DESCRIPCION_label}{$label ep_agregada DESCRIPCION }{END DESCRIPCION_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$DESCRIPCION_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="DESCRIPCION" {$tooltipAttr ep_agregada DESCRIPCION } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada DESCRIPCION }		</div>
+	</div>
+</div>
+
+
+{END DESCRIPCION_fieldblock}
+											
+{BEGIN APR__INICIAL_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_APR__INICIAL}  r-vertical-field" 
+	data-signal-error-for="APR__INICIAL{$id}" {$required_attr_APR__INICIAL}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="APR__INICIAL" data-fieldname="APR. INICIAL" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_APR__INICIAL}">
+		{BEGIN APR__INICIAL_label}{$label ep_agregada APR__INICIAL }{END APR__INICIAL_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$APR__INICIAL_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="APR__INICIAL" {$tooltipAttr ep_agregada APR__INICIAL } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada APR__INICIAL }		</div>
+	</div>
+</div>
+
+
+{END APR__INICIAL_fieldblock}
+											
+{BEGIN APR__ADICIONADA_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_APR__ADICIONADA}  r-vertical-field" 
+	data-signal-error-for="APR__ADICIONADA{$id}" {$required_attr_APR__ADICIONADA}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="APR__ADICIONADA" data-fieldname="APR. ADICIONADA" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_APR__ADICIONADA}">
+		{BEGIN APR__ADICIONADA_label}{$label ep_agregada APR__ADICIONADA }{END APR__ADICIONADA_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$APR__ADICIONADA_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="APR__ADICIONADA" {$tooltipAttr ep_agregada APR__ADICIONADA } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada APR__ADICIONADA }		</div>
+	</div>
+</div>
+
+
+{END APR__ADICIONADA_fieldblock}
+											
+{BEGIN APR__REDUCIDA_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_APR__REDUCIDA}  r-vertical-field" 
+	data-signal-error-for="APR__REDUCIDA{$id}" {$required_attr_APR__REDUCIDA}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="APR__REDUCIDA" data-fieldname="APR. REDUCIDA" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_APR__REDUCIDA}">
+		{BEGIN APR__REDUCIDA_label}{$label ep_agregada APR__REDUCIDA }{END APR__REDUCIDA_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$APR__REDUCIDA_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="APR__REDUCIDA" {$tooltipAttr ep_agregada APR__REDUCIDA } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada APR__REDUCIDA }		</div>
+	</div>
+</div>
+
+
+{END APR__REDUCIDA_fieldblock}
+											
+{BEGIN APR__VIGENTE_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_APR__VIGENTE}  r-vertical-field" 
+	data-signal-error-for="APR__VIGENTE{$id}" {$required_attr_APR__VIGENTE}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="APR__VIGENTE" data-fieldname="APR. VIGENTE" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_APR__VIGENTE}">
+		{BEGIN APR__VIGENTE_label}{$label ep_agregada APR__VIGENTE }{END APR__VIGENTE_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$APR__VIGENTE_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="APR__VIGENTE" {$tooltipAttr ep_agregada APR__VIGENTE } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada APR__VIGENTE }		</div>
+	</div>
+</div>
+
+
+{END APR__VIGENTE_fieldblock}
+											
+{BEGIN APR_BLOQUEADA_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_APR_BLOQUEADA}  r-vertical-field" 
+	data-signal-error-for="APR_BLOQUEADA{$id}" {$required_attr_APR_BLOQUEADA}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="APR_BLOQUEADA" data-fieldname="APR BLOQUEADA" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_APR_BLOQUEADA}">
+		{BEGIN APR_BLOQUEADA_label}{$label ep_agregada APR_BLOQUEADA }{END APR_BLOQUEADA_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$APR_BLOQUEADA_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="APR_BLOQUEADA" {$tooltipAttr ep_agregada APR_BLOQUEADA } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada APR_BLOQUEADA }		</div>
+	</div>
+</div>
+
+
+{END APR_BLOQUEADA_fieldblock}
+											
+{BEGIN CDP_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CDP}  r-vertical-field" 
+	data-signal-error-for="CDP{$id}" {$required_attr_CDP}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="CDP" data-fieldname="CDP" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CDP}">
+		{BEGIN CDP_label}{$label ep_agregada CDP }{END CDP_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$CDP_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CDP" {$tooltipAttr ep_agregada CDP } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada CDP }		</div>
+	</div>
+</div>
+
+
+{END CDP_fieldblock}
+											
+{BEGIN APR__DISPONIBLE_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_APR__DISPONIBLE}  r-vertical-field" 
+	data-signal-error-for="APR__DISPONIBLE{$id}" {$required_attr_APR__DISPONIBLE}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="APR__DISPONIBLE" data-fieldname="APR. DISPONIBLE" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_APR__DISPONIBLE}">
+		{BEGIN APR__DISPONIBLE_label}{$label ep_agregada APR__DISPONIBLE }{END APR__DISPONIBLE_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$APR__DISPONIBLE_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="APR__DISPONIBLE" {$tooltipAttr ep_agregada APR__DISPONIBLE } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada APR__DISPONIBLE }		</div>
+	</div>
+</div>
+
+
+{END APR__DISPONIBLE_fieldblock}
+											
+{BEGIN COMPROMISO_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_COMPROMISO}  r-vertical-field" 
+	data-signal-error-for="COMPROMISO{$id}" {$required_attr_COMPROMISO}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="COMPROMISO" data-fieldname="COMPROMISO" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_COMPROMISO}">
+		{BEGIN COMPROMISO_label}{$label ep_agregada COMPROMISO }{END COMPROMISO_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$COMPROMISO_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="COMPROMISO" {$tooltipAttr ep_agregada COMPROMISO } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada COMPROMISO }		</div>
+	</div>
+</div>
+
+
+{END COMPROMISO_fieldblock}
+											
+{BEGIN OBLIGACION_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_OBLIGACION}  r-vertical-field" 
+	data-signal-error-for="OBLIGACION{$id}" {$required_attr_OBLIGACION}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="OBLIGACION" data-fieldname="OBLIGACION" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_OBLIGACION}">
+		{BEGIN OBLIGACION_label}{$label ep_agregada OBLIGACION }{END OBLIGACION_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$OBLIGACION_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="OBLIGACION" {$tooltipAttr ep_agregada OBLIGACION } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada OBLIGACION }		</div>
+	</div>
+</div>
+
+
+{END OBLIGACION_fieldblock}
+											
+{BEGIN ORDEN_PAGO_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ORDEN_PAGO}  r-vertical-field" 
+	data-signal-error-for="ORDEN_PAGO{$id}" {$required_attr_ORDEN_PAGO}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="ORDEN_PAGO" data-fieldname="ORDEN PAGO" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ORDEN_PAGO}">
+		{BEGIN ORDEN_PAGO_label}{$label ep_agregada ORDEN_PAGO }{END ORDEN_PAGO_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$ORDEN_PAGO_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ORDEN_PAGO" {$tooltipAttr ep_agregada ORDEN_PAGO } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada ORDEN_PAGO }		</div>
+	</div>
+</div>
+
+
+{END ORDEN_PAGO_fieldblock}
+											
+{BEGIN PAGOS_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_PAGOS}  r-vertical-field" 
+	data-signal-error-for="PAGOS{$id}" {$required_attr_PAGOS}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field26" {$item_integrated_edit_field26} data-pageid="{$pageid}" data-field="PAGOS" data-fieldname="PAGOS" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_PAGOS}">
+		{BEGIN PAGOS_label}{$label ep_agregada PAGOS }{END PAGOS_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$PAGOS_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="PAGOS" {$tooltipAttr ep_agregada PAGOS } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada PAGOS }		</div>
+	</div>
+</div>
+
+
+{END PAGOS_fieldblock}
+											
+{BEGIN FECHA_ACTUALIZACION_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FECHA_ACTUALIZACION}  r-vertical-field" 
+	data-signal-error-for="FECHA_ACTUALIZACION{$id}" {$required_attr_FECHA_ACTUALIZACION}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field27" {$item_integrated_edit_field27} data-pageid="{$pageid}" data-field="FECHA_ACTUALIZACION" data-fieldname="FECHA_ACTUALIZACION" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_FECHA_ACTUALIZACION}">
+		{BEGIN FECHA_ACTUALIZACION_label}{$label ep_agregada FECHA_ACTUALIZACION }{END FECHA_ACTUALIZACION_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$FECHA_ACTUALIZACION_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="FECHA_ACTUALIZACION" {$tooltipAttr ep_agregada FECHA_ACTUALIZACION } >
+		<div class="text-muted" >
+		{$tooltip ep_agregada FECHA_ACTUALIZACION }		</div>
+	</div>
+</div>
+
+
+{END FECHA_ACTUALIZACION_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Guardar			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							Cancelar			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		Reiniciar		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  href="ep_agregada_view.php?{$editlink}" {$view_page_button_attrs}  title="" >
+				
+		Ver		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

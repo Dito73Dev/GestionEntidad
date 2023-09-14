@@ -1,0 +1,472 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel funcionario_SJ search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="id" data-fieldname="id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id}">
+		{$label funcionario_SJ id }	</label>
+	<div class="r-search-option">
+		{$searchtype_id}
+	</div>
+	<div class="r-search-field">
+		{$id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_fieldblock}
+											
+{BEGIN idEvaluador_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_idEvaluador}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="idEvaluador{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="idEvaluador" data-fieldname="idEvaluador" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_idEvaluador}">
+		{$label funcionario_SJ idEvaluador }	</label>
+	<div class="r-search-option">
+		{$searchtype_idEvaluador}
+	</div>
+	<div class="r-search-field">
+		{$idEvaluador_editcontrol}	</div>
+	<div class="r-search-field">
+		{$idEvaluador_editcontrol1}
+	</div>
+	
+</div>
+
+{END idEvaluador_fieldblock}
+											
+{BEGIN cedula_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cedula}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cedula{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="cedula" data-fieldname="cedula" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cedula}">
+		{$label funcionario_SJ cedula }	</label>
+	<div class="r-search-option">
+		{$searchtype_cedula}
+	</div>
+	<div class="r-search-field">
+		{$cedula_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cedula_editcontrol1}
+	</div>
+	
+</div>
+
+{END cedula_fieldblock}
+											
+{BEGIN lugarExpedicion_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_lugarExpedicion}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="lugarExpedicion{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="lugarExpedicion" data-fieldname="lugarExpedicion" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_lugarExpedicion}">
+		{$label funcionario_SJ lugarExpedicion }	</label>
+	<div class="r-search-option">
+		{$searchtype_lugarExpedicion}
+	</div>
+	<div class="r-search-field">
+		{$lugarExpedicion_editcontrol}	</div>
+	<div class="r-search-field">
+		{$lugarExpedicion_editcontrol1}
+	</div>
+	
+</div>
+
+{END lugarExpedicion_fieldblock}
+											
+{BEGIN fechaIngreso_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fechaIngreso}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="fechaIngreso{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="fechaIngreso" data-fieldname="fechaIngreso" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_fechaIngreso}">
+		{$label funcionario_SJ fechaIngreso }	</label>
+	<div class="r-search-option">
+		{$searchtype_fechaIngreso}
+	</div>
+	<div class="r-search-field">
+		{$fechaIngreso_editcontrol}	</div>
+	<div class="r-search-field">
+		{$fechaIngreso_editcontrol1}
+	</div>
+	
+</div>
+
+{END fechaIngreso_fieldblock}
+											
+{BEGIN nombre_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nombre}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="nombre{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="nombre" data-fieldname="nombre" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_nombre}">
+		{$label funcionario_SJ nombre }	</label>
+	<div class="r-search-option">
+		{$searchtype_nombre}
+	</div>
+	<div class="r-search-field">
+		{$nombre_editcontrol}	</div>
+	<div class="r-search-field">
+		{$nombre_editcontrol1}
+	</div>
+	
+</div>
+
+{END nombre_fieldblock}
+											
+{BEGIN ubicacionFisica_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ubicacionFisica}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="ubicacionFisica{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="ubicacionFisica" data-fieldname="ubicacionFisica" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ubicacionFisica}">
+		{$label funcionario_SJ ubicacionFisica }	</label>
+	<div class="r-search-option">
+		{$searchtype_ubicacionFisica}
+	</div>
+	<div class="r-search-field">
+		{$ubicacionFisica_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ubicacionFisica_editcontrol1}
+	</div>
+	
+</div>
+
+{END ubicacionFisica_fieldblock}
+											
+{BEGIN idCargo_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_idCargo}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="idCargo{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="idCargo" data-fieldname="idCargo" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_idCargo}">
+		{$label funcionario_SJ idCargo }	</label>
+	<div class="r-search-option">
+		{$searchtype_idCargo}
+	</div>
+	<div class="r-search-field">
+		{$idCargo_editcontrol}	</div>
+	<div class="r-search-field">
+		{$idCargo_editcontrol1}
+	</div>
+	
+</div>
+
+{END idCargo_fieldblock}
+											
+{BEGIN idDependencia_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_idDependencia}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="idDependencia{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="idDependencia" data-fieldname="idDependencia" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_idDependencia}">
+		{$label funcionario_SJ idDependencia }	</label>
+	<div class="r-search-option">
+		{$searchtype_idDependencia}
+	</div>
+	<div class="r-search-field">
+		{$idDependencia_editcontrol}	</div>
+	<div class="r-search-field">
+		{$idDependencia_editcontrol1}
+	</div>
+	
+</div>
+
+{END idDependencia_fieldblock}
+											
+{BEGIN idContrato_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_idContrato}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="idContrato{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="idContrato" data-fieldname="idContrato" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_idContrato}">
+		{$label funcionario_SJ idContrato }	</label>
+	<div class="r-search-option">
+		{$searchtype_idContrato}
+	</div>
+	<div class="r-search-field">
+		{$idContrato_editcontrol}	</div>
+	<div class="r-search-field">
+		{$idContrato_editcontrol1}
+	</div>
+	
+</div>
+
+{END idContrato_fieldblock}
+											
+{BEGIN idNombramiento_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_idNombramiento}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="idNombramiento{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="idNombramiento" data-fieldname="idNombramiento" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_idNombramiento}">
+		{$label funcionario_SJ idNombramiento }	</label>
+	<div class="r-search-option">
+		{$searchtype_idNombramiento}
+	</div>
+	<div class="r-search-field">
+		{$idNombramiento_editcontrol}	</div>
+	<div class="r-search-field">
+		{$idNombramiento_editcontrol1}
+	</div>
+	
+</div>
+
+{END idNombramiento_fieldblock}
+											
+{BEGIN estado_funcionario_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_estado_funcionario}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="estado_funcionario{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="estado_funcionario" data-fieldname="estado_funcionario" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_estado_funcionario}">
+		{$label funcionario_SJ estado_funcionario }	</label>
+	<div class="r-search-option">
+		{$searchtype_estado_funcionario}
+	</div>
+	<div class="r-search-field">
+		{$estado_funcionario_editcontrol}	</div>
+	<div class="r-search-field">
+		{$estado_funcionario_editcontrol1}
+	</div>
+	
+</div>
+
+{END estado_funcionario_fieldblock}
+											
+{BEGIN apellidos_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_apellidos}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="apellidos{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field17" {$item_integrated_search_field17} data-pageid="{$pageid}" data-field="apellidos" data-fieldname="apellidos" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_apellidos}">
+		{$label funcionario_SJ apellidos }	</label>
+	<div class="r-search-option">
+		{$searchtype_apellidos}
+	</div>
+	<div class="r-search-field">
+		{$apellidos_editcontrol}	</div>
+	<div class="r-search-field">
+		{$apellidos_editcontrol1}
+	</div>
+	
+</div>
+
+{END apellidos_fieldblock}
+											
+{BEGIN signpad_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_signpad}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="signpad{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="signpad" data-fieldname="signpad" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_signpad}">
+		{$label funcionario_SJ signpad }	</label>
+	<div class="r-search-option">
+		{$searchtype_signpad}
+	</div>
+	<div class="r-search-field">
+		{$signpad_editcontrol}	</div>
+	<div class="r-search-field">
+		{$signpad_editcontrol1}
+	</div>
+	
+</div>
+
+{END signpad_fieldblock}
+											
+{BEGIN sueldo_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sueldo}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sueldo{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="sueldo" data-fieldname="sueldo" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sueldo}">
+		{$label funcionario_SJ sueldo }	</label>
+	<div class="r-search-option">
+		{$searchtype_sueldo}
+	</div>
+	<div class="r-search-field">
+		{$sueldo_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sueldo_editcontrol1}
+	</div>
+	
+</div>
+
+{END sueldo_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} data-page=undefined >
+							Buscar			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

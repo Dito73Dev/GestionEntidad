@@ -1,0 +1,686 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-view" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel ep_agregada view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN UEJ_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UEJ}  r-vertical-field" data-fieldname="UEJ" data-signal-error-for="UEJ{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="UEJ" data-fieldname="UEJ" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_UEJ}">
+		
+		{BEGIN UEJ_label}{$label ep_agregada UEJ }{END UEJ_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$UEJ_value}	</div>
+
+		
+</div>
+
+
+{END UEJ_fieldblock}
+											
+{BEGIN NOMBRE_UEJ_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_NOMBRE_UEJ}  r-vertical-field" data-fieldname="NOMBRE UEJ" data-signal-error-for="NOMBRE_UEJ{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="NOMBRE_UEJ" data-fieldname="NOMBRE UEJ" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_NOMBRE_UEJ}">
+		
+		{BEGIN NOMBRE_UEJ_label}{$label ep_agregada NOMBRE_UEJ }{END NOMBRE_UEJ_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$NOMBRE_UEJ_value}	</div>
+
+		
+</div>
+
+
+{END NOMBRE_UEJ_fieldblock}
+											
+{BEGIN RUBRO_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_RUBRO}  r-vertical-field" data-fieldname="RUBRO" data-signal-error-for="RUBRO{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="RUBRO" data-fieldname="RUBRO" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_RUBRO}">
+		
+		{BEGIN RUBRO_label}{$label ep_agregada RUBRO }{END RUBRO_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$RUBRO_value}	</div>
+
+		
+</div>
+
+
+{END RUBRO_fieldblock}
+											
+{BEGIN TIPO_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TIPO}  r-vertical-field" data-fieldname="TIPO" data-signal-error-for="TIPO{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="TIPO" data-fieldname="TIPO" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_TIPO}">
+		
+		{BEGIN TIPO_label}{$label ep_agregada TIPO }{END TIPO_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$TIPO_value}	</div>
+
+		
+</div>
+
+
+{END TIPO_fieldblock}
+											
+{BEGIN CTA_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CTA}  r-vertical-field" data-fieldname="CTA" data-signal-error-for="CTA{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="CTA" data-fieldname="CTA" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_CTA}">
+		
+		{BEGIN CTA_label}{$label ep_agregada CTA }{END CTA_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$CTA_value}	</div>
+
+		
+</div>
+
+
+{END CTA_fieldblock}
+											
+{BEGIN SUBCTA_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SUBCTA}  r-vertical-field" data-fieldname="SUBCTA" data-signal-error-for="SUBCTA{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="SUBCTA" data-fieldname="SUBCTA" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_SUBCTA}">
+		
+		{BEGIN SUBCTA_label}{$label ep_agregada SUBCTA }{END SUBCTA_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$SUBCTA_value}	</div>
+
+		
+</div>
+
+
+{END SUBCTA_fieldblock}
+											
+{BEGIN OBJ_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_OBJ}  r-vertical-field" data-fieldname="OBJ" data-signal-error-for="OBJ{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="OBJ" data-fieldname="OBJ" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_OBJ}">
+		
+		{BEGIN OBJ_label}{$label ep_agregada OBJ }{END OBJ_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$OBJ_value}	</div>
+
+		
+</div>
+
+
+{END OBJ_fieldblock}
+											
+{BEGIN ORD_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ORD}  r-vertical-field" data-fieldname="ORD" data-signal-error-for="ORD{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="ORD" data-fieldname="ORD" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ORD}">
+		
+		{BEGIN ORD_label}{$label ep_agregada ORD }{END ORD_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ORD_value}	</div>
+
+		
+</div>
+
+
+{END ORD_fieldblock}
+											
+{BEGIN SORORD_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SORORD}  r-vertical-field" data-fieldname="SORORD" data-signal-error-for="SORORD{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="SORORD" data-fieldname="SORORD" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_SORORD}">
+		
+		{BEGIN SORORD_label}{$label ep_agregada SORORD }{END SORORD_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$SORORD_value}	</div>
+
+		
+</div>
+
+
+{END SORORD_fieldblock}
+											
+{BEGIN ITEM_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ITEM}  r-vertical-field" data-fieldname="ITEM" data-signal-error-for="ITEM{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="ITEM" data-fieldname="ITEM" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ITEM}">
+		
+		{BEGIN ITEM_label}{$label ep_agregada ITEM }{END ITEM_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ITEM_value}	</div>
+
+		
+</div>
+
+
+{END ITEM_fieldblock}
+											
+{BEGIN SUBITEM_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SUBITEM}  r-vertical-field" data-fieldname="SUBITEM" data-signal-error-for="SUBITEM{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="SUBITEM" data-fieldname="SUBITEM" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_SUBITEM}">
+		
+		{BEGIN SUBITEM_label}{$label ep_agregada SUBITEM }{END SUBITEM_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$SUBITEM_value}	</div>
+
+		
+</div>
+
+
+{END SUBITEM_fieldblock}
+											
+{BEGIN SUBITEM2_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SUBITEM2}  r-vertical-field" data-fieldname="SUBITEM2" data-signal-error-for="SUBITEM2{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="SUBITEM2" data-fieldname="SUBITEM2" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_SUBITEM2}">
+		
+		{BEGIN SUBITEM2_label}{$label ep_agregada SUBITEM2 }{END SUBITEM2_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$SUBITEM2_value}	</div>
+
+		
+</div>
+
+
+{END SUBITEM2_fieldblock}
+											
+{BEGIN FUENTE_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FUENTE}  r-vertical-field" data-fieldname="FUENTE" data-signal-error-for="FUENTE{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="FUENTE" data-fieldname="FUENTE" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_FUENTE}">
+		
+		{BEGIN FUENTE_label}{$label ep_agregada FUENTE }{END FUENTE_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$FUENTE_value}	</div>
+
+		
+</div>
+
+
+{END FUENTE_fieldblock}
+											
+{BEGIN REC_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_REC}  r-vertical-field" data-fieldname="REC" data-signal-error-for="REC{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="REC" data-fieldname="REC" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_REC}">
+		
+		{BEGIN REC_label}{$label ep_agregada REC }{END REC_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$REC_value}	</div>
+
+		
+</div>
+
+
+{END REC_fieldblock}
+											
+{BEGIN SIT_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SIT}  r-vertical-field" data-fieldname="SIT" data-signal-error-for="SIT{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="SIT" data-fieldname="SIT" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_SIT}">
+		
+		{BEGIN SIT_label}{$label ep_agregada SIT }{END SIT_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$SIT_value}	</div>
+
+		
+</div>
+
+
+{END SIT_fieldblock}
+											
+{BEGIN DESCRIPCION_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DESCRIPCION}  r-vertical-field" data-fieldname="DESCRIPCION" data-signal-error-for="DESCRIPCION{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="DESCRIPCION" data-fieldname="DESCRIPCION" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_DESCRIPCION}">
+		
+		{BEGIN DESCRIPCION_label}{$label ep_agregada DESCRIPCION }{END DESCRIPCION_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$DESCRIPCION_value}	</div>
+
+		
+</div>
+
+
+{END DESCRIPCION_fieldblock}
+											
+{BEGIN APR__INICIAL_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_APR__INICIAL}  r-vertical-field" data-fieldname="APR. INICIAL" data-signal-error-for="APR__INICIAL{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="APR__INICIAL" data-fieldname="APR. INICIAL" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_APR__INICIAL}">
+		
+		{BEGIN APR__INICIAL_label}{$label ep_agregada APR__INICIAL }{END APR__INICIAL_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$APR__INICIAL_value}	</div>
+
+		
+</div>
+
+
+{END APR__INICIAL_fieldblock}
+											
+{BEGIN APR__ADICIONADA_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_APR__ADICIONADA}  r-vertical-field" data-fieldname="APR. ADICIONADA" data-signal-error-for="APR__ADICIONADA{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="APR__ADICIONADA" data-fieldname="APR. ADICIONADA" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_APR__ADICIONADA}">
+		
+		{BEGIN APR__ADICIONADA_label}{$label ep_agregada APR__ADICIONADA }{END APR__ADICIONADA_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$APR__ADICIONADA_value}	</div>
+
+		
+</div>
+
+
+{END APR__ADICIONADA_fieldblock}
+											
+{BEGIN APR__REDUCIDA_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_APR__REDUCIDA}  r-vertical-field" data-fieldname="APR. REDUCIDA" data-signal-error-for="APR__REDUCIDA{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="APR__REDUCIDA" data-fieldname="APR. REDUCIDA" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_APR__REDUCIDA}">
+		
+		{BEGIN APR__REDUCIDA_label}{$label ep_agregada APR__REDUCIDA }{END APR__REDUCIDA_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$APR__REDUCIDA_value}	</div>
+
+		
+</div>
+
+
+{END APR__REDUCIDA_fieldblock}
+											
+{BEGIN APR__VIGENTE_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_APR__VIGENTE}  r-vertical-field" data-fieldname="APR. VIGENTE" data-signal-error-for="APR__VIGENTE{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="APR__VIGENTE" data-fieldname="APR. VIGENTE" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_APR__VIGENTE}">
+		
+		{BEGIN APR__VIGENTE_label}{$label ep_agregada APR__VIGENTE }{END APR__VIGENTE_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$APR__VIGENTE_value}	</div>
+
+		
+</div>
+
+
+{END APR__VIGENTE_fieldblock}
+											
+{BEGIN APR_BLOQUEADA_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_APR_BLOQUEADA}  r-vertical-field" data-fieldname="APR BLOQUEADA" data-signal-error-for="APR_BLOQUEADA{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="APR_BLOQUEADA" data-fieldname="APR BLOQUEADA" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_APR_BLOQUEADA}">
+		
+		{BEGIN APR_BLOQUEADA_label}{$label ep_agregada APR_BLOQUEADA }{END APR_BLOQUEADA_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$APR_BLOQUEADA_value}	</div>
+
+		
+</div>
+
+
+{END APR_BLOQUEADA_fieldblock}
+											
+{BEGIN CDP_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CDP}  r-vertical-field" data-fieldname="CDP" data-signal-error-for="CDP{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="CDP" data-fieldname="CDP" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_CDP}">
+		
+		{BEGIN CDP_label}{$label ep_agregada CDP }{END CDP_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$CDP_value}	</div>
+
+		
+</div>
+
+
+{END CDP_fieldblock}
+											
+{BEGIN APR__DISPONIBLE_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_APR__DISPONIBLE}  r-vertical-field" data-fieldname="APR. DISPONIBLE" data-signal-error-for="APR__DISPONIBLE{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="APR__DISPONIBLE" data-fieldname="APR. DISPONIBLE" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_APR__DISPONIBLE}">
+		
+		{BEGIN APR__DISPONIBLE_label}{$label ep_agregada APR__DISPONIBLE }{END APR__DISPONIBLE_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$APR__DISPONIBLE_value}	</div>
+
+		
+</div>
+
+
+{END APR__DISPONIBLE_fieldblock}
+											
+{BEGIN COMPROMISO_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_COMPROMISO}  r-vertical-field" data-fieldname="COMPROMISO" data-signal-error-for="COMPROMISO{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="COMPROMISO" data-fieldname="COMPROMISO" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_COMPROMISO}">
+		
+		{BEGIN COMPROMISO_label}{$label ep_agregada COMPROMISO }{END COMPROMISO_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$COMPROMISO_value}	</div>
+
+		
+</div>
+
+
+{END COMPROMISO_fieldblock}
+											
+{BEGIN OBLIGACION_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_OBLIGACION}  r-vertical-field" data-fieldname="OBLIGACION" data-signal-error-for="OBLIGACION{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="OBLIGACION" data-fieldname="OBLIGACION" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_OBLIGACION}">
+		
+		{BEGIN OBLIGACION_label}{$label ep_agregada OBLIGACION }{END OBLIGACION_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$OBLIGACION_value}	</div>
+
+		
+</div>
+
+
+{END OBLIGACION_fieldblock}
+											
+{BEGIN ORDEN_PAGO_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ORDEN_PAGO}  r-vertical-field" data-fieldname="ORDEN PAGO" data-signal-error-for="ORDEN_PAGO{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field26" {$item_integrated_edit_field26} data-pageid="{$pageid}" data-field="ORDEN_PAGO" data-fieldname="ORDEN PAGO" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ORDEN_PAGO}">
+		
+		{BEGIN ORDEN_PAGO_label}{$label ep_agregada ORDEN_PAGO }{END ORDEN_PAGO_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ORDEN_PAGO_value}	</div>
+
+		
+</div>
+
+
+{END ORDEN_PAGO_fieldblock}
+											
+{BEGIN PAGOS_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_PAGOS}  r-vertical-field" data-fieldname="PAGOS" data-signal-error-for="PAGOS{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field27" {$item_integrated_edit_field27} data-pageid="{$pageid}" data-field="PAGOS" data-fieldname="PAGOS" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_PAGOS}">
+		
+		{BEGIN PAGOS_label}{$label ep_agregada PAGOS }{END PAGOS_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$PAGOS_value}	</div>
+
+		
+</div>
+
+
+{END PAGOS_fieldblock}
+											
+{BEGIN FECHA_ACTUALIZACION_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FECHA_ACTUALIZACION}  r-vertical-field" data-fieldname="FECHA_ACTUALIZACION" data-signal-error-for="FECHA_ACTUALIZACION{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="FECHA_ACTUALIZACION" data-fieldname="FECHA_ACTUALIZACION" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_FECHA_ACTUALIZACION}">
+		
+		{BEGIN FECHA_ACTUALIZACION_label}{$label ep_agregada FECHA_ACTUALIZACION }{END FECHA_ACTUALIZACION_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$FECHA_ACTUALIZACION_value}	</div>
+
+		
+</div>
+
+
+{END FECHA_ACTUALIZACION_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Cerrar ventana			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="ep_agregada_edit.php?{$editlink}" {$edit_page_button_attrs}  title="" >
+				
+		Editar		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,450 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel contractor_master_SJ search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN contractor_id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_id}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="contractor_id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="contractor_id" data-fieldname="contractor_id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_contractor_id}">
+		{$label contractor_master_SJ contractor_id }	</label>
+	<div class="r-search-option">
+		{$searchtype_contractor_id}
+	</div>
+	<div class="r-search-field">
+		{$contractor_id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$contractor_id_editcontrol1}
+	</div>
+	
+</div>
+
+{END contractor_id_fieldblock}
+											
+{BEGIN contractor_type_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_type}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="contractor_type{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="contractor_type" data-fieldname="contractor_type" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_contractor_type}">
+		{$label contractor_master_SJ contractor_type }	</label>
+	<div class="r-search-option">
+		{$searchtype_contractor_type}
+	</div>
+	<div class="r-search-field">
+		{$contractor_type_editcontrol}	</div>
+	<div class="r-search-field">
+		{$contractor_type_editcontrol1}
+	</div>
+	
+</div>
+
+{END contractor_type_fieldblock}
+											
+{BEGIN contractor_doc_id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_doc_id}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="contractor_doc_id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="contractor_doc_id" data-fieldname="contractor_doc_id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_contractor_doc_id}">
+		{$label contractor_master_SJ contractor_doc_id }	</label>
+	<div class="r-search-option">
+		{$searchtype_contractor_doc_id}
+	</div>
+	<div class="r-search-field">
+		{$contractor_doc_id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$contractor_doc_id_editcontrol1}
+	</div>
+	
+</div>
+
+{END contractor_doc_id_fieldblock}
+											
+{BEGIN contractor_image_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_image}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="contractor_image{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="contractor_image" data-fieldname="contractor_image" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_contractor_image}">
+		{$label contractor_master_SJ contractor_image }	</label>
+	<div class="r-search-option">
+		{$searchtype_contractor_image}
+	</div>
+	<div class="r-search-field">
+		{$contractor_image_editcontrol}	</div>
+	<div class="r-search-field">
+		{$contractor_image_editcontrol1}
+	</div>
+	
+</div>
+
+{END contractor_image_fieldblock}
+											
+{BEGIN contractor_nombresfull_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_nombresfull}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="contractor_nombresfull{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="contractor_nombresfull" data-fieldname="contractor_nombresfull" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_contractor_nombresfull}">
+		{$label contractor_master_SJ contractor_nombresfull }	</label>
+	<div class="r-search-option">
+		{$searchtype_contractor_nombresfull}
+	</div>
+	<div class="r-search-field">
+		{$contractor_nombresfull_editcontrol}	</div>
+	<div class="r-search-field">
+		{$contractor_nombresfull_editcontrol1}
+	</div>
+	
+</div>
+
+{END contractor_nombresfull_fieldblock}
+											
+{BEGIN contractor_email_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_email}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="contractor_email{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="contractor_email" data-fieldname="contractor_email" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_contractor_email}">
+		{$label contractor_master_SJ contractor_email }	</label>
+	<div class="r-search-option">
+		{$searchtype_contractor_email}
+	</div>
+	<div class="r-search-field">
+		{$contractor_email_editcontrol}	</div>
+	<div class="r-search-field">
+		{$contractor_email_editcontrol1}
+	</div>
+	
+</div>
+
+{END contractor_email_fieldblock}
+											
+{BEGIN contractor_email_mincit_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_email_mincit}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="contractor_email_mincit{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="contractor_email_mincit" data-fieldname="contractor_email_mincit" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_contractor_email_mincit}">
+		{$label contractor_master_SJ contractor_email_mincit }	</label>
+	<div class="r-search-option">
+		{$searchtype_contractor_email_mincit}
+	</div>
+	<div class="r-search-field">
+		{$contractor_email_mincit_editcontrol}	</div>
+	<div class="r-search-field">
+		{$contractor_email_mincit_editcontrol1}
+	</div>
+	
+</div>
+
+{END contractor_email_mincit_fieldblock}
+											
+{BEGIN contractor_address_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_address}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="contractor_address{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="contractor_address" data-fieldname="contractor_address" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_contractor_address}">
+		{$label contractor_master_SJ contractor_address }	</label>
+	<div class="r-search-option">
+		{$searchtype_contractor_address}
+	</div>
+	<div class="r-search-field">
+		{$contractor_address_editcontrol}	</div>
+	<div class="r-search-field">
+		{$contractor_address_editcontrol1}
+	</div>
+	
+</div>
+
+{END contractor_address_fieldblock}
+											
+{BEGIN contractor_phone_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_phone}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="contractor_phone{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="contractor_phone" data-fieldname="contractor_phone" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_contractor_phone}">
+		{$label contractor_master_SJ contractor_phone }	</label>
+	<div class="r-search-option">
+		{$searchtype_contractor_phone}
+	</div>
+	<div class="r-search-field">
+		{$contractor_phone_editcontrol}	</div>
+	<div class="r-search-field">
+		{$contractor_phone_editcontrol1}
+	</div>
+	
+</div>
+
+{END contractor_phone_fieldblock}
+											
+{BEGIN contractor_mobile_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_mobile}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="contractor_mobile{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="contractor_mobile" data-fieldname="contractor_mobile" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_contractor_mobile}">
+		{$label contractor_master_SJ contractor_mobile }	</label>
+	<div class="r-search-option">
+		{$searchtype_contractor_mobile}
+	</div>
+	<div class="r-search-field">
+		{$contractor_mobile_editcontrol}	</div>
+	<div class="r-search-field">
+		{$contractor_mobile_editcontrol1}
+	</div>
+	
+</div>
+
+{END contractor_mobile_fieldblock}
+											
+{BEGIN contractor_city_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_city}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="contractor_city{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="contractor_city" data-fieldname="contractor_city" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_contractor_city}">
+		{$label contractor_master_SJ contractor_city }	</label>
+	<div class="r-search-option">
+		{$searchtype_contractor_city}
+	</div>
+	<div class="r-search-field">
+		{$contractor_city_editcontrol}	</div>
+	<div class="r-search-field">
+		{$contractor_city_editcontrol1}
+	</div>
+	
+</div>
+
+{END contractor_city_fieldblock}
+											
+{BEGIN sys_status_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_status}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sys_status{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field26" {$item_integrated_search_field26} data-pageid="{$pageid}" data-field="sys_status" data-fieldname="sys_status" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sys_status}">
+		{$label contractor_master_SJ sys_status }	</label>
+	<div class="r-search-option">
+		{$searchtype_sys_status}
+	</div>
+	<div class="r-search-field">
+		{$sys_status_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sys_status_editcontrol1}
+	</div>
+	
+</div>
+
+{END sys_status_fieldblock}
+											
+{BEGIN contractor_sup_jerarquico_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_sup_jerarquico}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="contractor_sup_jerarquico{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="contractor_sup_jerarquico" data-fieldname="contractor_sup_jerarquico" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_contractor_sup_jerarquico}">
+		{$label contractor_master_SJ contractor_sup_jerarquico }	</label>
+	<div class="r-search-option">
+		{$searchtype_contractor_sup_jerarquico}
+	</div>
+	<div class="r-search-field">
+		{$contractor_sup_jerarquico_editcontrol}	</div>
+	<div class="r-search-field">
+		{$contractor_sup_jerarquico_editcontrol1}
+	</div>
+	
+</div>
+
+{END contractor_sup_jerarquico_fieldblock}
+											
+{BEGIN contractor_dependencia_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_dependencia}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="contractor_dependencia{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="contractor_dependencia" data-fieldname="contractor_dependencia" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_contractor_dependencia}">
+		{$label contractor_master_SJ contractor_dependencia }	</label>
+	<div class="r-search-option">
+		{$searchtype_contractor_dependencia}
+	</div>
+	<div class="r-search-field">
+		{$contractor_dependencia_editcontrol}	</div>
+	<div class="r-search-field">
+		{$contractor_dependencia_editcontrol1}
+	</div>
+	
+</div>
+
+{END contractor_dependencia_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} data-page=undefined >
+							Buscar			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

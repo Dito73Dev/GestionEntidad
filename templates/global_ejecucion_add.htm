@@ -1,0 +1,823 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-add" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="2"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel global_ejecucion add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="2"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>Volver a la lista</button>
+	{END message_back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Ver</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Editar</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+		
+					<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="2"
+	>
+	<tbody>
+						<tr>
+						
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c3}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c}
+<td
+	{$cell_grid_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c}
+								</tr>
+	 
+	 
+																</tbody></table>
+				<div class="panel with-tabs panel-default form-tabs" data-itemtype="tabs" data-itemid="tabs" {$item_tabs} data-pageid="{$pageid}" data-page="global_ejecucion_add">
+	<div class="panel-heading">
+		<ul class="nav nav-tabs" role="tablist">
+									<li role="presentation" class="active">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section{$pageid}">
+					RUBRO				</a>
+			</li>
+										<li role="presentation" class="">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section1{$pageid}">
+					BPIN				</a>
+			</li>
+										<li role="presentation" class="">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section2{$pageid}">
+					GERENTE				</a>
+			</li>
+									</ul>
+	</div>
+	<div class="panel-body">
+		<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="tab_section{$pageid}"> 
+			{BEGIN section_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section" id="form_section_{$pageid}" data-makeup="small" {$form_section} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section_0} >
+										
+
+{BEGIN cellblock_section_c2}
+<td
+	{$cell_section_c2}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c2" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN VIGENCIA_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_VIGENCIA}  r-vertical-field" 
+	data-signal-error-for="VIGENCIA{$id}" {$required_attr_VIGENCIA}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="VIGENCIA" data-fieldname="VIGENCIA" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_VIGENCIA}">
+		{BEGIN VIGENCIA_label}{$label global_ejecucion VIGENCIA }{END VIGENCIA_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$VIGENCIA_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="VIGENCIA" {$tooltipAttr global_ejecucion VIGENCIA } >
+		<div class="text-muted" >
+		{$tooltip global_ejecucion VIGENCIA }		</div>
+	</div>
+</div>
+
+
+{END VIGENCIA_fieldblock}
+	
+								</td>
+			{END cellblock_section_c2}
+			 
+																
+
+{BEGIN cellblock_section_c3}
+<td
+	{$cell_section_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c3" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN NOMBRE_UEJ_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_NOMBRE_UEJ}  r-vertical-field" 
+	data-signal-error-for="NOMBRE_UEJ{$id}" {$required_attr_NOMBRE_UEJ}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="NOMBRE_UEJ" data-fieldname="NOMBRE UEJ" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_NOMBRE_UEJ}">
+		{BEGIN NOMBRE_UEJ_label}{$label global_ejecucion NOMBRE_UEJ }{END NOMBRE_UEJ_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$NOMBRE_UEJ_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="NOMBRE_UEJ" {$tooltipAttr global_ejecucion NOMBRE_UEJ } >
+		<div class="text-muted" >
+		{$tooltip global_ejecucion NOMBRE_UEJ }		</div>
+	</div>
+</div>
+
+
+{END NOMBRE_UEJ_fieldblock}
+	
+								</td>
+			{END cellblock_section_c3}
+								</tr>
+	 
+	 
+														<tr {$row_section_1} >
+										
+
+{BEGIN cellblock_section_c4}
+<td
+	{$cell_section_c4}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c4" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN RUBRO_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_RUBRO}  r-vertical-field" 
+	data-signal-error-for="RUBRO{$id}" {$required_attr_RUBRO}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="RUBRO" data-fieldname="RUBRO" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_RUBRO}">
+		{BEGIN RUBRO_label}{$label global_ejecucion RUBRO }{END RUBRO_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$RUBRO_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="RUBRO" {$tooltipAttr global_ejecucion RUBRO } >
+		<div class="text-muted" >
+		{$tooltip global_ejecucion RUBRO }		</div>
+	</div>
+</div>
+
+
+{END RUBRO_fieldblock}
+	
+								</td>
+			{END cellblock_section_c4}
+			 
+		
+							
+
+{BEGIN cellblock_section_c5}
+<td
+	{$cell_section_c5}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c5" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section_c5}
+								</tr>
+	 
+	 
+														<tr {$row_section_2} >
+										
+
+{BEGIN cellblock_section_c6}
+<td
+	{$cell_section_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c6" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN USO_SN_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_USO_SN}  r-vertical-field" 
+	data-signal-error-for="USO_SN{$id}" {$required_attr_USO_SN}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="USO_SN" data-fieldname="USO_SN" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_USO_SN}">
+		{BEGIN USO_SN_label}{$label global_ejecucion USO_SN }{END USO_SN_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$USO_SN_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="USO_SN" {$tooltipAttr global_ejecucion USO_SN } >
+		<div class="text-muted" >
+		{$tooltip global_ejecucion USO_SN }		</div>
+	</div>
+</div>
+
+
+{END USO_SN_fieldblock}
+	
+								</td>
+			{END cellblock_section_c6}
+			 
+																
+
+{BEGIN cellblock_section_c7}
+<td
+	{$cell_section_c7}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c7" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN TIPO_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TIPO}  r-vertical-field" 
+	data-signal-error-for="TIPO{$id}" {$required_attr_TIPO}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="TIPO" data-fieldname="TIPO" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_TIPO}">
+		{BEGIN TIPO_label}{$label global_ejecucion TIPO }{END TIPO_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$TIPO_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="TIPO" {$tooltipAttr global_ejecucion TIPO } >
+		<div class="text-muted" >
+		{$tooltip global_ejecucion TIPO }		</div>
+	</div>
+</div>
+
+
+{END TIPO_fieldblock}
+	
+								</td>
+			{END cellblock_section_c7}
+								</tr>
+	 
+	 
+														<tr {$row_section_3} >
+										
+
+{BEGIN cellblock_section_c1}
+<td
+	{$cell_section_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="section_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN DESCRIPCION_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DESCRIPCION}  r-vertical-field" 
+	data-signal-error-for="DESCRIPCION{$id}" {$required_attr_DESCRIPCION}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="DESCRIPCION" data-fieldname="DESCRIPCION" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_DESCRIPCION}">
+		{BEGIN DESCRIPCION_label}{$label global_ejecucion DESCRIPCION }{END DESCRIPCION_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$DESCRIPCION_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="DESCRIPCION" {$tooltipAttr global_ejecucion DESCRIPCION } >
+		<div class="text-muted" >
+		{$tooltip global_ejecucion DESCRIPCION }		</div>
+	</div>
+</div>
+
+
+{END DESCRIPCION_fieldblock}
+	
+								</td>
+			{END cellblock_section_c1}
+								</tr>
+	 
+	 
+														<tr {$row_section_4} >
+										
+
+{BEGIN cellblock_section_c8}
+<td
+	{$cell_section_c8}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c8" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN APR__VIGENTE_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_APR__VIGENTE}  r-vertical-field" 
+	data-signal-error-for="APR__VIGENTE{$id}" {$required_attr_APR__VIGENTE}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="APR__VIGENTE" data-fieldname="APR. VIGENTE" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_APR__VIGENTE}">
+		{BEGIN APR__VIGENTE_label}{$label global_ejecucion APR__VIGENTE }{END APR__VIGENTE_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$APR__VIGENTE_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="APR__VIGENTE" {$tooltipAttr global_ejecucion APR__VIGENTE } >
+		<div class="text-muted" >
+		{$tooltip global_ejecucion APR__VIGENTE }		</div>
+	</div>
+</div>
+
+
+{END APR__VIGENTE_fieldblock}
+	
+								</td>
+			{END cellblock_section_c8}
+			 
+		
+							
+
+{BEGIN cellblock_section_c9}
+<td
+	{$cell_section_c9}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c9" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section_c9}
+								</tr>
+			</tbody></table>
+{END section_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section1{$pageid}"> 
+			{BEGIN section1_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section1" id="form_section1_{$pageid}" data-makeup="small" {$form_section1} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section1_0} >
+										
+
+{BEGIN cellblock_section1_c1}
+<td
+	{$cell_section1_c1}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+			data-cellId="section1_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN CODIGO_BPIN_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CODIGO_BPIN}  r-vertical-field" 
+	data-signal-error-for="CODIGO_BPIN{$id}" {$required_attr_CODIGO_BPIN}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="CODIGO_BPIN" data-fieldname="CODIGO_BPIN" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CODIGO_BPIN}">
+		{BEGIN CODIGO_BPIN_label}{$label global_ejecucion CODIGO_BPIN }{END CODIGO_BPIN_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$CODIGO_BPIN_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CODIGO_BPIN" {$tooltipAttr global_ejecucion CODIGO_BPIN } >
+		<div class="text-muted" >
+		{$tooltip global_ejecucion CODIGO_BPIN }		</div>
+	</div>
+</div>
+
+
+{END CODIGO_BPIN_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c1}
+								</tr>
+	 
+	 
+														<tr {$row_section1_1} >
+										
+
+{BEGIN cellblock_section1_c}
+<td
+	{$cell_section1_c}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+			data-cellId="section1_c" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN FICHA_BPIN_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FICHA_BPIN}  r-vertical-field" 
+	data-signal-error-for="FICHA_BPIN{$id}" {$required_attr_FICHA_BPIN}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="FICHA_BPIN" data-fieldname="FICHA_BPIN" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_FICHA_BPIN}">
+		{BEGIN FICHA_BPIN_label}{$label global_ejecucion FICHA_BPIN }{END FICHA_BPIN_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$FICHA_BPIN_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="FICHA_BPIN" {$tooltipAttr global_ejecucion FICHA_BPIN } >
+		<div class="text-muted" >
+		{$tooltip global_ejecucion FICHA_BPIN }		</div>
+	</div>
+</div>
+
+
+{END FICHA_BPIN_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c}
+								</tr>
+			</tbody></table>
+{END section1_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section2{$pageid}"> 
+			{BEGIN section2_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section2" id="form_section2_{$pageid}" data-makeup="small" {$form_section2} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section2_0} >
+										
+
+{BEGIN cellblock_section2_c1}
+<td
+	{$cell_section2_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c1" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN DEPENDENCIA_ID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DEPENDENCIA_ID}  r-vertical-field" 
+	data-signal-error-for="DEPENDENCIA_ID{$id}" {$required_attr_DEPENDENCIA_ID}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field35" {$item_integrated_edit_field35} data-pageid="{$pageid}" data-field="DEPENDENCIA_ID" data-fieldname="DEPENDENCIA_ID" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_DEPENDENCIA_ID}">
+		{BEGIN DEPENDENCIA_ID_label}{$label global_ejecucion DEPENDENCIA_ID }{END DEPENDENCIA_ID_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$DEPENDENCIA_ID_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="DEPENDENCIA_ID" {$tooltipAttr global_ejecucion DEPENDENCIA_ID } >
+		<div class="text-muted" >
+		{$tooltip global_ejecucion DEPENDENCIA_ID }		</div>
+	</div>
+</div>
+
+
+{END DEPENDENCIA_ID_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c1}
+			 
+																
+
+{BEGIN cellblock_section2_c}
+<td
+	{$cell_section2_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN RESPONSABLE_ID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_RESPONSABLE_ID}  r-vertical-field" 
+	data-signal-error-for="RESPONSABLE_ID{$id}" {$required_attr_RESPONSABLE_ID}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field36" {$item_integrated_edit_field36} data-pageid="{$pageid}" data-field="RESPONSABLE_ID" data-fieldname="RESPONSABLE_ID" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_RESPONSABLE_ID}">
+		{BEGIN RESPONSABLE_ID_label}{$label global_ejecucion RESPONSABLE_ID }{END RESPONSABLE_ID_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$RESPONSABLE_ID_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="RESPONSABLE_ID" {$tooltipAttr global_ejecucion RESPONSABLE_ID } >
+		<div class="text-muted" >
+		{$tooltip global_ejecucion RESPONSABLE_ID }		</div>
+	</div>
+</div>
+
+
+{END RESPONSABLE_ID_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c}
+								</tr>
+	 
+	 
+														<tr {$row_section2_1} >
+										
+
+{BEGIN cellblock_section2_c2}
+<td
+	{$cell_section2_c2}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c2" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN DEPENDENCIA_SUP_ID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DEPENDENCIA_SUP_ID}  r-vertical-field" 
+	data-signal-error-for="DEPENDENCIA_SUP_ID{$id}" {$required_attr_DEPENDENCIA_SUP_ID}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field37" {$item_integrated_edit_field37} data-pageid="{$pageid}" data-field="DEPENDENCIA_SUP_ID" data-fieldname="DEPENDENCIA_SUP_ID" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_DEPENDENCIA_SUP_ID}">
+		{BEGIN DEPENDENCIA_SUP_ID_label}{$label global_ejecucion DEPENDENCIA_SUP_ID }{END DEPENDENCIA_SUP_ID_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$DEPENDENCIA_SUP_ID_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="DEPENDENCIA_SUP_ID" {$tooltipAttr global_ejecucion DEPENDENCIA_SUP_ID } >
+		<div class="text-muted" >
+		{$tooltip global_ejecucion DEPENDENCIA_SUP_ID }		</div>
+	</div>
+</div>
+
+
+{END DEPENDENCIA_SUP_ID_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c2}
+			 
+		
+							
+
+{BEGIN cellblock_section2_c3}
+<td
+	{$cell_section2_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c3" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section2_c3}
+								</tr>
+			</tbody></table>
+{END section2_block}
+						</div>
+				</div>
+	</div>
+</div>  	
+				{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="2"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Guardar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

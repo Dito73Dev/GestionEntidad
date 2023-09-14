@@ -1,0 +1,249 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-view" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel rep_prg001_catalogopresupuestal view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ID}  r-vertical-field" data-fieldname="ID" data-signal-error-for="ID{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="ID" data-fieldname="ID" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ID}">
+		
+		{BEGIN ID_label}{$label rep_prg001_catalogopresupuestal ID }{END ID_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ID_value}	</div>
+
+		
+</div>
+
+
+{END ID_fieldblock}
+											
+{BEGIN Identificacion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Identificacion}  r-vertical-field" data-fieldname="Identificacion" data-signal-error-for="Identificacion{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="Identificacion" data-fieldname="Identificacion" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Identificacion}">
+		
+		{BEGIN Identificacion_label}{$label rep_prg001_catalogopresupuestal Identificacion }{END Identificacion_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Identificacion_value}	</div>
+
+		
+</div>
+
+
+{END Identificacion_fieldblock}
+											
+{BEGIN Descripcion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Descripcion}  r-vertical-field" data-fieldname="Descripcion" data-signal-error-for="Descripcion{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="Descripcion" data-fieldname="Descripcion" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Descripcion}">
+		
+		{BEGIN Descripcion_label}{$label rep_prg001_catalogopresupuestal Descripcion }{END Descripcion_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Descripcion_value}	</div>
+
+		
+</div>
+
+
+{END Descripcion_fieldblock}
+											
+{BEGIN Estado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Estado}  r-vertical-field" data-fieldname="Estado" data-signal-error-for="Estado{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="Estado" data-fieldname="Estado" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Estado}">
+		
+		{BEGIN Estado_label}{$label rep_prg001_catalogopresupuestal Estado }{END Estado_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Estado_value}	</div>
+
+		
+</div>
+
+
+{END Estado_fieldblock}
+											
+{BEGIN Usos_Presupuestales_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Usos_Presupuestales}  r-vertical-field" data-fieldname="Usos_Presupuestales" data-signal-error-for="Usos_Presupuestales{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="Usos_Presupuestales" data-fieldname="Usos_Presupuestales" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Usos_Presupuestales}">
+		
+		{BEGIN Usos_Presupuestales_label}{$label rep_prg001_catalogopresupuestal Usos_Presupuestales }{END Usos_Presupuestales_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Usos_Presupuestales_value}	</div>
+
+		
+</div>
+
+
+{END Usos_Presupuestales_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Cerrar ventana			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="rep_prg001_catalogopresupuestal_edit.php?{$editlink}" {$edit_page_button_attrs}  title="" >
+				
+		Editar		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

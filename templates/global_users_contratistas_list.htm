@@ -1,0 +1,2736 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-list"   
+			data-panel-bg
+		>
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="300px" data-fixed class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo1" {$item_logo1}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo1" {$item_logo1} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Expandir" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{BEGIN menuitems_main}
+<ul data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}"	class="r-menu nav menu-treelike" 
+	data-menulevel="1"
+>
+
+{BEGIN item_children1}
+<li class="
+	{$item_current}">
+<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline data-menu-top >
+	{$item_separator}
+	<span class="r-menu-link r-menu-expanded "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+		<span class="r-menu-collapsed">{$item_collicon}{$item_firstcap}</span>
+	</a>
+{BEGIN item_showchildren2}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="2">
+	{BEGIN item_children2}
+		{BEGIN item_menulink2}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+	</a>
+			{BEGIN item_showchildren3}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="3">
+	{BEGIN item_children3}
+		{BEGIN item_menulink3}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren3}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren3}
+	</span>
+	</a>
+			{BEGIN item_showchildren4}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="4">
+	{BEGIN item_children4}
+		{BEGIN item_menulink4}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren4}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren4}
+	</span>
+	</a>
+			{BEGIN item_showchildren5}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="5">
+	{BEGIN item_children5}
+		{BEGIN item_menulink5}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren5}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren5}
+	</span>
+	</a>
+					</li>
+		{END item_menulink5}
+	{END item_children5}
+</ul>
+{END item_showchildren5}
+		</li>
+		{END item_menulink4}
+	{END item_children4}
+</ul>
+{END item_showchildren4}
+		</li>
+		{END item_menulink3}
+	{END item_children3}
+</ul>
+{END item_showchildren3}
+		</li>
+		{END item_menulink2}
+	{END item_children2}
+</ul>
+{END item_showchildren2}
+</li>
+{END item_children1}
+</ul>
+{END menuitems_main}
+			</div>
+		
+ 
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="search_panel" {$item_search_panel} data-topcell-item-type="search_panel" >
+				<!-- Begin Search panel content -->
+<div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}"	 >
+
+	<div class="panel-heading">
+		<div class="btn-group r-sp-addfield" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle btn-sm )" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Búsqueda			<span class="caret"></span>
+			</button>
+		</div>
+
+
+		<div class="btn-group r-sp-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Mostrar opciones</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>todas las condiciones</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>cualquier condición</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>esconder</a></li>
+			</ul>
+		</div>
+
+
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+																		{BEGIN searchCtrlBlock_usr_personalid}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_personalid}" {$filterRow_attrs_usr_personalid}>
+			<label>{$label global_users_contratistas usr_personalid }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_personalid}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_personalid}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_personalid}</span>
+						</div>
+		{END searchCtrlBlock_usr_personalid}
+																{BEGIN searchCtrlBlock_phone}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_phone}" {$filterRow_attrs_phone}>
+			<label>{$label global_users_contratistas phone }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_phone}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_phone}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_phone}</span>
+						</div>
+		{END searchCtrlBlock_phone}
+																{BEGIN searchCtrlBlock_estado_vinculacion_mincit}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_estado_vinculacion_mincit}" {$filterRow_attrs_estado_vinculacion_mincit}>
+			<label>{$label global_users_contratistas estado_vinculacion_mincit }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_estado_vinculacion_mincit}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_estado_vinculacion_mincit}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_estado_vinculacion_mincit}</span>
+						</div>
+		{END searchCtrlBlock_estado_vinculacion_mincit}
+																{BEGIN searchCtrlBlock_habilita_almacen}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_habilita_almacen}" {$filterRow_attrs_habilita_almacen}>
+			<label>{$label global_users_contratistas habilita_almacen }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_habilita_almacen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_habilita_almacen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_habilita_almacen}</span>
+						</div>
+		{END searchCtrlBlock_habilita_almacen}
+																{BEGIN searchCtrlBlock_upd_date}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_upd_date}" {$filterRow_attrs_upd_date}>
+			<label>{$label global_users_contratistas upd_date }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_upd_date}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_upd_date}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_upd_date}</span>
+						</div>
+		{END searchCtrlBlock_upd_date}
+																{BEGIN searchCtrlBlock_usr_emergencia}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_emergencia}" {$filterRow_attrs_usr_emergencia}>
+			<label>{$label global_users_contratistas usr_emergencia }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_emergencia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_emergencia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_emergencia}</span>
+						</div>
+		{END searchCtrlBlock_usr_emergencia}
+																{BEGIN searchCtrlBlock_ctrl_contacto}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_ctrl_contacto}" {$filterRow_attrs_ctrl_contacto}>
+			<label>{$label global_users_contratistas ctrl_contacto }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_ctrl_contacto}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_ctrl_contacto}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_ctrl_contacto}</span>
+						</div>
+		{END searchCtrlBlock_ctrl_contacto}
+																{BEGIN searchCtrlBlock_ctrl_pedidoalmacen}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_ctrl_pedidoalmacen}" {$filterRow_attrs_ctrl_pedidoalmacen}>
+			<label>{$label global_users_contratistas ctrl_pedidoalmacen }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_ctrl_pedidoalmacen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_ctrl_pedidoalmacen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_ctrl_pedidoalmacen}</span>
+						</div>
+		{END searchCtrlBlock_ctrl_pedidoalmacen}
+																{BEGIN searchCtrlBlock_usr_piso}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_piso}" {$filterRow_attrs_usr_piso}>
+			<label>{$label global_users_contratistas usr_piso }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_piso}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_piso}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_piso}</span>
+						</div>
+		{END searchCtrlBlock_usr_piso}
+																{BEGIN searchCtrlBlock_usr_regpago}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_regpago}" {$filterRow_attrs_usr_regpago}>
+			<label>{$label global_users_contratistas usr_regpago }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_regpago}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_regpago}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_regpago}</span>
+						</div>
+		{END searchCtrlBlock_usr_regpago}
+																{BEGIN searchCtrlBlock_ctrl}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_ctrl}" {$filterRow_attrs_ctrl}>
+			<label>{$label global_users_contratistas ctrl }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_ctrl}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_ctrl}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_ctrl}</span>
+						</div>
+		{END searchCtrlBlock_ctrl}
+																{BEGIN searchCtrlBlock_sys_anio}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sys_anio}" {$filterRow_attrs_sys_anio}>
+			<label>{$label global_users_contratistas sys_anio }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sys_anio}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sys_anio}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sys_anio}</span>
+						</div>
+		{END searchCtrlBlock_sys_anio}
+																{BEGIN searchCtrlBlock_usr_update_almacen}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_update_almacen}" {$filterRow_attrs_usr_update_almacen}>
+			<label>{$label global_users_contratistas usr_update_almacen }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_update_almacen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_update_almacen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_update_almacen}</span>
+						</div>
+		{END searchCtrlBlock_usr_update_almacen}
+																{BEGIN searchCtrlBlock_sys_update_family_info}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sys_update_family_info}" {$filterRow_attrs_sys_update_family_info}>
+			<label>{$label global_users_contratistas sys_update_family_info }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sys_update_family_info}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sys_update_family_info}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sys_update_family_info}</span>
+						</div>
+		{END searchCtrlBlock_sys_update_family_info}
+																{BEGIN searchCtrlBlock_sys_update_info}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sys_update_info}" {$filterRow_attrs_sys_update_info}>
+			<label>{$label global_users_contratistas sys_update_info }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sys_update_info}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sys_update_info}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sys_update_info}</span>
+						</div>
+		{END searchCtrlBlock_sys_update_info}
+																{BEGIN searchCtrlBlock_sys_upd_time}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sys_upd_time}" {$filterRow_attrs_sys_upd_time}>
+			<label>{$label global_users_contratistas sys_upd_time }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sys_upd_time}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sys_upd_time}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sys_upd_time}</span>
+						</div>
+		{END searchCtrlBlock_sys_upd_time}
+																{BEGIN searchCtrlBlock_sys_upd_user}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sys_upd_user}" {$filterRow_attrs_sys_upd_user}>
+			<label>{$label global_users_contratistas sys_upd_user }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sys_upd_user}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sys_upd_user}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sys_upd_user}</span>
+						</div>
+		{END searchCtrlBlock_sys_upd_user}
+																{BEGIN searchCtrlBlock_sys_upd_fecha}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sys_upd_fecha}" {$filterRow_attrs_sys_upd_fecha}>
+			<label>{$label global_users_contratistas sys_upd_fecha }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sys_upd_fecha}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sys_upd_fecha}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sys_upd_fecha}</span>
+						</div>
+		{END searchCtrlBlock_sys_upd_fecha}
+																{BEGIN searchCtrlBlock_sys_disabledate_usr}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sys_disabledate_usr}" {$filterRow_attrs_sys_disabledate_usr}>
+			<label>{$label global_users_contratistas sys_disabledate_usr }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sys_disabledate_usr}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sys_disabledate_usr}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sys_disabledate_usr}</span>
+						</div>
+		{END searchCtrlBlock_sys_disabledate_usr}
+																{BEGIN searchCtrlBlock_sys_expiration_usr}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sys_expiration_usr}" {$filterRow_attrs_sys_expiration_usr}>
+			<label>{$label global_users_contratistas sys_expiration_usr }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sys_expiration_usr}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sys_expiration_usr}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sys_expiration_usr}</span>
+						</div>
+		{END searchCtrlBlock_sys_expiration_usr}
+																{BEGIN searchCtrlBlock_sys_registrationdate_usr}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sys_registrationdate_usr}" {$filterRow_attrs_sys_registrationdate_usr}>
+			<label>{$label global_users_contratistas sys_registrationdate_usr }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sys_registrationdate_usr}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sys_registrationdate_usr}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sys_registrationdate_usr}</span>
+						</div>
+		{END searchCtrlBlock_sys_registrationdate_usr}
+																{BEGIN searchCtrlBlock_sys_ntries_usr}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sys_ntries_usr}" {$filterRow_attrs_sys_ntries_usr}>
+			<label>{$label global_users_contratistas sys_ntries_usr }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sys_ntries_usr}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sys_ntries_usr}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sys_ntries_usr}</span>
+						</div>
+		{END searchCtrlBlock_sys_ntries_usr}
+																{BEGIN searchCtrlBlock_global_rol_ciudadano_dep}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_global_rol_ciudadano_dep}" {$filterRow_attrs_global_rol_ciudadano_dep}>
+			<label>{$label global_users_contratistas global_rol_ciudadano_dep }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_global_rol_ciudadano_dep}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_ciudadano_dep}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_ciudadano_dep}</span>
+						</div>
+		{END searchCtrlBlock_global_rol_ciudadano_dep}
+																{BEGIN searchCtrlBlock_global_rol_ciudadano}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_global_rol_ciudadano}" {$filterRow_attrs_global_rol_ciudadano}>
+			<label>{$label global_users_contratistas global_rol_ciudadano }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_global_rol_ciudadano}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_ciudadano}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_ciudadano}</span>
+						</div>
+		{END searchCtrlBlock_global_rol_ciudadano}
+																{BEGIN searchCtrlBlock_global_rol_gestion}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_global_rol_gestion}" {$filterRow_attrs_global_rol_gestion}>
+			<label>{$label global_users_contratistas global_rol_gestion }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_global_rol_gestion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_gestion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_gestion}</span>
+						</div>
+		{END searchCtrlBlock_global_rol_gestion}
+																{BEGIN searchCtrlBlock_global_rol_comacc}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_global_rol_comacc}" {$filterRow_attrs_global_rol_comacc}>
+			<label>{$label global_users_contratistas global_rol_comacc }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_global_rol_comacc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_comacc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_comacc}</span>
+						</div>
+		{END searchCtrlBlock_global_rol_comacc}
+																{BEGIN searchCtrlBlock_global_rol_procjur}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_global_rol_procjur}" {$filterRow_attrs_global_rol_procjur}>
+			<label>{$label global_users_contratistas global_rol_procjur }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_global_rol_procjur}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_procjur}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_procjur}</span>
+						</div>
+		{END searchCtrlBlock_global_rol_procjur}
+																{BEGIN searchCtrlBlock_globla_rol_ct}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_globla_rol_ct}" {$filterRow_attrs_globla_rol_ct}>
+			<label>{$label global_users_contratistas globla_rol_ct }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_globla_rol_ct}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_globla_rol_ct}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_globla_rol_ct}</span>
+						</div>
+		{END searchCtrlBlock_globla_rol_ct}
+																{BEGIN searchCtrlBlock_global_rol_cont}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_global_rol_cont}" {$filterRow_attrs_global_rol_cont}>
+			<label>{$label global_users_contratistas global_rol_cont }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_global_rol_cont}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_cont}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_cont}</span>
+						</div>
+		{END searchCtrlBlock_global_rol_cont}
+																{BEGIN searchCtrlBlock_global_rol}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_global_rol}" {$filterRow_attrs_global_rol}>
+			<label>{$label global_users_contratistas global_rol }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_global_rol}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_global_rol}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol}</span>
+						</div>
+		{END searchCtrlBlock_global_rol}
+																{BEGIN searchCtrlBlock_global_rol_sid}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_global_rol_sid}" {$filterRow_attrs_global_rol_sid}>
+			<label>{$label global_users_contratistas global_rol_sid }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_global_rol_sid}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_sid}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_sid}</span>
+						</div>
+		{END searchCtrlBlock_global_rol_sid}
+																{BEGIN searchCtrlBlock_global_rol_th}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_global_rol_th}" {$filterRow_attrs_global_rol_th}>
+			<label>{$label global_users_contratistas global_rol_th }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_global_rol_th}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_th}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_th}</span>
+						</div>
+		{END searchCtrlBlock_global_rol_th}
+																{BEGIN searchCtrlBlock_global_rol_jc3}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_global_rol_jc3}" {$filterRow_attrs_global_rol_jc3}>
+			<label>{$label global_users_contratistas global_rol_jc3 }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_global_rol_jc3}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_jc3}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_jc3}</span>
+						</div>
+		{END searchCtrlBlock_global_rol_jc3}
+																{BEGIN searchCtrlBlock_global_rol_cej}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_global_rol_cej}" {$filterRow_attrs_global_rol_cej}>
+			<label>{$label global_users_contratistas global_rol_cej }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_global_rol_cej}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_cej}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_cej}</span>
+						</div>
+		{END searchCtrlBlock_global_rol_cej}
+																{BEGIN searchCtrlBlock_global_rol_sipi}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_global_rol_sipi}" {$filterRow_attrs_global_rol_sipi}>
+			<label>{$label global_users_contratistas global_rol_sipi }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_global_rol_sipi}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_sipi}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_sipi}</span>
+						</div>
+		{END searchCtrlBlock_global_rol_sipi}
+																{BEGIN searchCtrlBlock_global_rol_zf}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_global_rol_zf}" {$filterRow_attrs_global_rol_zf}>
+			<label>{$label global_users_contratistas global_rol_zf }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_global_rol_zf}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_zf}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_zf}</span>
+						</div>
+		{END searchCtrlBlock_global_rol_zf}
+																{BEGIN searchCtrlBlock_global_rol_dashboard}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_global_rol_dashboard}" {$filterRow_attrs_global_rol_dashboard}>
+			<label>{$label global_users_contratistas global_rol_dashboard }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_global_rol_dashboard}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_dashboard}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_dashboard}</span>
+						</div>
+		{END searchCtrlBlock_global_rol_dashboard}
+																{BEGIN searchCtrlBlock_global_rol_cpanel}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_global_rol_cpanel}" {$filterRow_attrs_global_rol_cpanel}>
+			<label>{$label global_users_contratistas global_rol_cpanel }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_global_rol_cpanel}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_cpanel}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_cpanel}</span>
+						</div>
+		{END searchCtrlBlock_global_rol_cpanel}
+																{BEGIN searchCtrlBlock_global_rol_siis}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_global_rol_siis}" {$filterRow_attrs_global_rol_siis}>
+			<label>{$label global_users_contratistas global_rol_siis }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_global_rol_siis}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_siis}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_siis}</span>
+						</div>
+		{END searchCtrlBlock_global_rol_siis}
+																{BEGIN searchCtrlBlock_global_rol_inmuebles}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_global_rol_inmuebles}" {$filterRow_attrs_global_rol_inmuebles}>
+			<label>{$label global_users_contratistas global_rol_inmuebles }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_global_rol_inmuebles}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_inmuebles}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_inmuebles}</span>
+						</div>
+		{END searchCtrlBlock_global_rol_inmuebles}
+																{BEGIN searchCtrlBlock_global_rol_hojar}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_global_rol_hojar}" {$filterRow_attrs_global_rol_hojar}>
+			<label>{$label global_users_contratistas global_rol_hojar }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_global_rol_hojar}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_hojar}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_hojar}</span>
+						</div>
+		{END searchCtrlBlock_global_rol_hojar}
+																{BEGIN searchCtrlBlock_global_rol_ci}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_global_rol_ci}" {$filterRow_attrs_global_rol_ci}>
+			<label>{$label global_users_contratistas global_rol_ci }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_global_rol_ci}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_ci}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_ci}</span>
+						</div>
+		{END searchCtrlBlock_global_rol_ci}
+																{BEGIN searchCtrlBlock_global_rol_gh}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_global_rol_gh}" {$filterRow_attrs_global_rol_gh}>
+			<label>{$label global_users_contratistas global_rol_gh }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_global_rol_gh}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_gh}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_gh}</span>
+						</div>
+		{END searchCtrlBlock_global_rol_gh}
+																{BEGIN searchCtrlBlock_global_rol_me}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_global_rol_me}" {$filterRow_attrs_global_rol_me}>
+			<label>{$label global_users_contratistas global_rol_me }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_global_rol_me}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_me}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_me}</span>
+						</div>
+		{END searchCtrlBlock_global_rol_me}
+																{BEGIN searchCtrlBlock_usr_minequipo_grupo}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_minequipo_grupo}" {$filterRow_attrs_usr_minequipo_grupo}>
+			<label>{$label global_users_contratistas usr_minequipo_grupo }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_minequipo_grupo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_minequipo_grupo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_minequipo_grupo}</span>
+						</div>
+		{END searchCtrlBlock_usr_minequipo_grupo}
+																{BEGIN searchCtrlBlock_usr_minequipo_lider}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_minequipo_lider}" {$filterRow_attrs_usr_minequipo_lider}>
+			<label>{$label global_users_contratistas usr_minequipo_lider }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_minequipo_lider}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_minequipo_lider}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_minequipo_lider}</span>
+						</div>
+		{END searchCtrlBlock_usr_minequipo_lider}
+																{BEGIN searchCtrlBlock_usr_jefe}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_jefe}" {$filterRow_attrs_usr_jefe}>
+			<label>{$label global_users_contratistas usr_jefe }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_jefe}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_jefe}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_jefe}</span>
+						</div>
+		{END searchCtrlBlock_usr_jefe}
+																{BEGIN searchCtrlBlock_usr_not_msj}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_not_msj}" {$filterRow_attrs_usr_not_msj}>
+			<label>{$label global_users_contratistas usr_not_msj }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_not_msj}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_not_msj}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_not_msj}</span>
+						</div>
+		{END searchCtrlBlock_usr_not_msj}
+																{BEGIN searchCtrlBlock_usr_not}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_not}" {$filterRow_attrs_usr_not}>
+			<label>{$label global_users_contratistas usr_not }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_not}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_not}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_not}</span>
+						</div>
+		{END searchCtrlBlock_usr_not}
+																{BEGIN searchCtrlBlock_usr_entidad}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_entidad}" {$filterRow_attrs_usr_entidad}>
+			<label>{$label global_users_contratistas usr_entidad }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_entidad}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_entidad}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_entidad}</span>
+						</div>
+		{END searchCtrlBlock_usr_entidad}
+																{BEGIN searchCtrlBlock_user_dep}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_user_dep}" {$filterRow_attrs_user_dep}>
+			<label>{$label global_users_contratistas user_dep }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_user_dep}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_user_dep}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_user_dep}</span>
+						</div>
+		{END searchCtrlBlock_user_dep}
+																{BEGIN searchCtrlBlock_usr_dependencia}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_dependencia}" {$filterRow_attrs_usr_dependencia}>
+			<label>{$label global_users_contratistas usr_dependencia }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_dependencia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_dependencia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_dependencia}</span>
+						</div>
+		{END searchCtrlBlock_usr_dependencia}
+																{BEGIN searchCtrlBlock_usr_status_sol}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_status_sol}" {$filterRow_attrs_usr_status_sol}>
+			<label>{$label global_users_contratistas usr_status_sol }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_status_sol}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_status_sol}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_status_sol}</span>
+						</div>
+		{END searchCtrlBlock_usr_status_sol}
+																{BEGIN searchCtrlBlock_usr_type_vinculacion}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_type_vinculacion}" {$filterRow_attrs_usr_type_vinculacion}>
+			<label>{$label global_users_contratistas usr_type_vinculacion }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_type_vinculacion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_type_vinculacion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_type_vinculacion}</span>
+						</div>
+		{END searchCtrlBlock_usr_type_vinculacion}
+																{BEGIN searchCtrlBlock_usr_type_vinc}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_type_vinc}" {$filterRow_attrs_usr_type_vinc}>
+			<label>{$label global_users_contratistas usr_type_vinc }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_type_vinc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_type_vinc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_type_vinc}</span>
+						</div>
+		{END searchCtrlBlock_usr_type_vinc}
+																{BEGIN searchCtrlBlock_usr_rdnkey}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_rdnkey}" {$filterRow_attrs_usr_rdnkey}>
+			<label>{$label global_users_contratistas usr_rdnkey }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_rdnkey}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_rdnkey}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_rdnkey}</span>
+						</div>
+		{END searchCtrlBlock_usr_rdnkey}
+																{BEGIN searchCtrlBlock_usr_status}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_status}" {$filterRow_attrs_usr_status}>
+			<label>{$label global_users_contratistas usr_status }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_status}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_status}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_status}</span>
+						</div>
+		{END searchCtrlBlock_usr_status}
+																{BEGIN searchCtrlBlock_usr_status_nomina}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_status_nomina}" {$filterRow_attrs_usr_status_nomina}>
+			<label>{$label global_users_contratistas usr_status_nomina }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_status_nomina}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_status_nomina}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_status_nomina}</span>
+						</div>
+		{END searchCtrlBlock_usr_status_nomina}
+																{BEGIN searchCtrlBlock_usr_image}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_image}" {$filterRow_attrs_usr_image}>
+			<label>{$label global_users_contratistas usr_image }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_image}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_image}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_image}</span>
+						</div>
+		{END searchCtrlBlock_usr_image}
+																{BEGIN searchCtrlBlock_usr_sessini}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_sessini}" {$filterRow_attrs_usr_sessini}>
+			<label>{$label global_users_contratistas usr_sessini }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_sessini}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_sessini}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_sessini}</span>
+						</div>
+		{END searchCtrlBlock_usr_sessini}
+																{BEGIN searchCtrlBlock_usr_inicial}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_inicial}" {$filterRow_attrs_usr_inicial}>
+			<label>{$label global_users_contratistas usr_inicial }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_inicial}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_inicial}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_inicial}</span>
+						</div>
+		{END searchCtrlBlock_usr_inicial}
+																{BEGIN searchCtrlBlock_usr_nombresfull}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_nombresfull}" {$filterRow_attrs_usr_nombresfull}>
+			<label>{$label global_users_contratistas usr_nombresfull }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_nombresfull}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_nombresfull}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_nombresfull}</span>
+						</div>
+		{END searchCtrlBlock_usr_nombresfull}
+																{BEGIN searchCtrlBlock_Password}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_Password}" {$filterRow_attrs_Password}>
+			<label>{$label global_users_contratistas Password }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_Password}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_Password}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_Password}</span>
+						</div>
+		{END searchCtrlBlock_Password}
+																{BEGIN searchCtrlBlock_id_fk}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_id_fk}" {$filterRow_attrs_id_fk}>
+			<label>{$label global_users_contratistas id_fk }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_id_fk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_id_fk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_id_fk}</span>
+						</div>
+		{END searchCtrlBlock_id_fk}
+																{BEGIN searchCtrlBlock_idusrglobal}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_idusrglobal}" {$filterRow_attrs_idusrglobal}>
+			<label>{$label global_users_contratistas idusrglobal }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_idusrglobal}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_idusrglobal}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_idusrglobal}</span>
+						</div>
+		{END searchCtrlBlock_idusrglobal}
+																{BEGIN searchCtrlBlock_usr_name}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_name}" {$filterRow_attrs_usr_name}>
+			<label>{$label global_users_contratistas usr_name }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_name}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_name}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_name}</span>
+						</div>
+		{END searchCtrlBlock_usr_name}
+																{BEGIN searchCtrlBlock_usr_lname}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_lname}" {$filterRow_attrs_usr_lname}>
+			<label>{$label global_users_contratistas usr_lname }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_lname}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_lname}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_lname}</span>
+						</div>
+		{END searchCtrlBlock_usr_lname}
+																{BEGIN searchCtrlBlock_usr_extension}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_extension}" {$filterRow_attrs_usr_extension}>
+			<label>{$label global_users_contratistas usr_extension }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_extension}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_extension}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_extension}</span>
+						</div>
+		{END searchCtrlBlock_usr_extension}
+																{BEGIN searchCtrlBlock_usr_email}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_email}" {$filterRow_attrs_usr_email}>
+			<label>{$label global_users_contratistas usr_email }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_email}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_email}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_email}</span>
+						</div>
+		{END searchCtrlBlock_usr_email}
+																{BEGIN searchCtrlBlock_usr_dep}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_dep}" {$filterRow_attrs_usr_dep}>
+			<label>{$label global_users_contratistas usr_dep }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_dep}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_dep}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_dep}</span>
+						</div>
+		{END searchCtrlBlock_usr_dep}
+																{BEGIN searchCtrlBlock_usr_datebirth}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_datebirth}" {$filterRow_attrs_usr_datebirth}>
+			<label>{$label global_users_contratistas usr_datebirth }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_datebirth}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_datebirth}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_datebirth}</span>
+						</div>
+		{END searchCtrlBlock_usr_datebirth}
+																{BEGIN searchCtrlBlock_usr_cargo}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_cargo}" {$filterRow_attrs_usr_cargo}>
+			<label>{$label global_users_contratistas usr_cargo }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_cargo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_cargo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_cargo}</span>
+						</div>
+		{END searchCtrlBlock_usr_cargo}
+																{BEGIN searchCtrlBlock_sys_user}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sys_user}" {$filterRow_attrs_sys_user}>
+			<label>{$label global_users_contratistas sys_user }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sys_user}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sys_user}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sys_user}</span>
+						</div>
+		{END searchCtrlBlock_sys_user}
+																{BEGIN searchCtrlBlock_sys_time}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sys_time}" {$filterRow_attrs_sys_time}>
+			<label>{$label global_users_contratistas sys_time }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sys_time}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sys_time}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sys_time}</span>
+						</div>
+		{END searchCtrlBlock_sys_time}
+																{BEGIN searchCtrlBlock_sys_date}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sys_date}" {$filterRow_attrs_sys_date}>
+			<label>{$label global_users_contratistas sys_date }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sys_date}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sys_date}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sys_date}</span>
+						</div>
+		{END searchCtrlBlock_sys_date}
+																{BEGIN searchCtrlBlock_groupid}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_groupid}" {$filterRow_attrs_groupid}>
+			<label>{$label global_users_contratistas groupid }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_groupid}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_groupid}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_groupid}</span>
+						</div>
+		{END searchCtrlBlock_groupid}
+																{BEGIN searchCtrlBlock_global_rol_contratos}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_global_rol_contratos}" {$filterRow_attrs_global_rol_contratos}>
+			<label>{$label global_users_contratistas global_rol_contratos }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_global_rol_contratos}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_contratos}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_contratos}</span>
+						</div>
+		{END searchCtrlBlock_global_rol_contratos}
+																{BEGIN searchCtrlBlock_global_rol_almacen}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_global_rol_almacen}" {$filterRow_attrs_global_rol_almacen}>
+			<label>{$label global_users_contratistas global_rol_almacen }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_global_rol_almacen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_almacen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_almacen}</span>
+						</div>
+		{END searchCtrlBlock_global_rol_almacen}
+																{BEGIN searchCtrlBlock_active}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_active}" {$filterRow_attrs_active}>
+			<label>{$label global_users_contratistas active }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_active}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_active}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_active}</span>
+						</div>
+		{END searchCtrlBlock_active}
+																{BEGIN searchCtrlBlock_Username}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_Username}" {$filterRow_attrs_Username}>
+			<label>{$label global_users_contratistas Username }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_Username}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_Username}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_Username}</span>
+						</div>
+		{END searchCtrlBlock_Username}
+		
+
+	</div>
+
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary btn-sm" id="searchButton{$id}" {$searchbutton_attrs}>Buscar</button>
+
+				<button class="btn btn-default btn-sm" {$showAllCont_attrs} {$showallbutton_attrs}>Mostrar todo</button>
+	</div>
+</div>
+<!-- End Search panel content -->
+			</div>
+		
+    {END left_block}
+</div>				</div>
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div data-resize-left="leftbar"  data-fixed class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Encubrir" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="breadcrumb" {$item_breadcrumb} data-topcell-item-type="breadcrumb" >
+				{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+
+<div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+				<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Mostrar todo">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
+				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-cog"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN exportselected_link}
+	<li data-itemtype="export_selected" data-itemid="export_selected" {$item_export_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}  title="" >
+				
+		Exportar seleccionados		
+		</a>
+	</li>
+{END exportselected_link}
+							{BEGIN deleteselected_link}
+	<li data-itemtype="delete_selected" data-itemid="delete_selected" {$item_delete_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}  title="" >
+				
+		Borrar articulos seleccionados		
+		</a>
+	</li>
+{END deleteselected_link}
+							<li role="separator" class="divider"></li>								<li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
+				<a   href="global_users_contratistas_search.php{$stateLink_full}" {$advsearchlink_attrs}  title="" >
+				
+		Búsqueda avanzada		
+		</a>
+	</li>
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="showOptPanel{$id}"  title="" >
+				
+		Mostrar panel de búsqueda		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="hideOptPanel{$id}"  title="" >
+				
+		Ocultar panel de búsqueda		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							<li role="separator" class="divider"></li>							{BEGIN export_link}
+	<li data-itemtype="export" data-itemid="export" {$item_export} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportlink_attrs}  title="" >
+				
+		Exportar resultados		
+		</a>
+	</li>
+{END export_link}
+							<li role="separator" class="divider"></li>							{BEGIN import_link}
+	<li data-itemtype="import" data-itemid="import" {$item_import} data-pageid="{$pageid}" data-small >
+				<a  {$importlink_attrs} href="global_users_contratistas_import.php{$stateLink_full}"  title="" >
+				
+		Importar		
+		</a>
+	</li>
+{END import_link}
+					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Conectar			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+			{BEGIN userbutton_icon}							<span class="glyphicon glyphicon-user"></span>
+						{END userbutton_icon}{$userbutton_image}			{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN userinfo_link}
+	<li data-itemtype="userinfo_link" data-itemid="userinfo_link" {$item_userinfo_link} data-pageid="{$pageid}" data-small >
+				<a  href="userinfo.php"  title="" >
+				
+		Perfil del usuario		
+		</a>
+	</li>
+{END userinfo_link}
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Desconectarse		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Area Admin		
+		</a>
+	</li>
+{END adminarea_link}
+							{BEGIN changepwd_link}
+	<li data-itemtype="changepassword_link" data-itemid="changepassword_link" {$item_changepassword_link} data-pageid="{$pageid}" data-small >
+				<a  href="changepwd.php" {$changepwdlink_attrs} id="changePasswordButton{$id}"  title="" >
+				
+		Cambiar contraseña		
+		</a>
+	</li>
+{END changepwd_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="top_c2" data-pageid="{$pageid}"	{$cell_top_c2}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN mastertable_block}
+<div data-itemtype="master_info" data-itemid="master_info" {$item_master_info} data-pageid="{$pageid}">
+	{$showmasterfile}
+</div>
+{END mastertable_block}		</div>					</div>
+			</div>		
+{END top_block}
+						</div>
+											<div class="r-grid"
+			data-responsive
+	>
+	{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+	<div class="panel panel-default"
+	>
+		<div class="panel-heading">
+							{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class="			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		{BEGIN add_link}
+<span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$addlink_attrs} href="global_users_contratistas_add.php{$stateLink_full}" data-popup >
+					<span class="glyphicon glyphicon-plus-sign"></span>
+							Nuevo usuario			</a>
+</span>
+{END add_link}
+	 
+		{BEGIN deleteselected_link}
+<span data-itemtype="delete" data-itemid="delete" {$item_delete} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled >
+							Borrar artículos seleccionados			</a>
+</span>
+{END deleteselected_link}
+			{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class="r-align-right			col-md-6
+	
+">
+		 
+		<span data-itemtype="details_found" data-itemid="details_found" {$item_details_found} data-pageid="{$pageid}" data-small >
+{$mlp_push}{$mlparam first var first_shown}{$mlparam last var last_shown}{$mlparam total var records_found}{mlang_message DISPLAYING}{$mlp_pop}</span>	 
+		<span data-itemtype="page_size" data-itemid="page_size" {$item_page_size} data-pageid="{$pageid}" >
+		{$recsPerPage}
+</span>	 
+		{BEGIN print_friendly}
+<span id="printpanelblock{$id}"  data-pageid="{$pageid}" {$printpanel_hiddenattr} data-itemtype="print_panel" data-itemid="print_panel" {$item_print_panel} data-pageid="{$pageid}">
+	<button title="Página para imprimir" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span class="glyphicon glyphicon-print"></span>
+				<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu pull-right">
+										 
+				 
+					<li class="container-fluid 
+										">
+									<div id="print_friendly_scope{$id}">
+	<div class="row">
+		<div class="col-md-4">
+			Rango:		</div>
+
+			 
+		{BEGIN print_friendly_all}
+		<div class="col-md-8">
+			<label for="printAll{$id}">
+				<input type="radio" id="printAll{$id}" data-href="global_users_contratistas_print.php?all=1&amp;{$crosstable_attrs}" name="printScope" >
+									Imprimir todas las páginas							</label>
+		</div>
+		{END print_friendly_all}
+		</div>
+		<div class="row">
+		<div class="col-md-4">&nbsp;</div>
+		<div class="col-md-8">
+			<label for="printPage{$id}">
+				<input name="printScope" id="printPage{$id}" type="radio" checked data-href="global_users_contratistas_print.php?{$crosstable_attrs}">
+				Imprimir esta página			</label>
+		</div>
+	</div>
+		
+		 
+	<div class="row">
+		<div class="col-md-4">
+			&nbsp;
+		</div>
+		<div class="col-md-8">
+			<label style="color: gray;" for="printSelection{$id}">
+			<input name="printScope" disabled="disabled" id="printSelection{$id}" type="radio" >
+			Imprimir la selección			</label>
+		</div>
+	</div>
+	</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									<div>
+	<label for="printPerPage{$id}">
+					Resultados por página							
+	</label>
+	<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+					 text-center 					">
+									<span data-itemtype="print_button" data-itemid="print_button" {$item_print_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" id="print_friendly_button{$id}" >
+							Imprimir			</a>
+</span>
+				 
+					</li>
+															</ul>
+</span>
+{END print_friendly}
+		</div>					</div>
+			</div>		
+{END above-grid_block}
+			</div>
+
+					{BEGIN grid_block}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}	<style>
+@media screen and (max-width: 767px) {
+				[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Username"]:before {
+		content: "{$label global_users_contratistas Username}";
+	}
+				[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_email"]:before {
+		content: "{$label global_users_contratistas usr_email}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_name"]:before {
+		content: "{$label global_users_contratistas usr_name}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_lname"]:before {
+		content: "{$label global_users_contratistas usr_lname}";
+	}
+				[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_personalid"]:before {
+		content: "{$label global_users_contratistas usr_personalid}";
+	}
+																						[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="global_rol_almacen"]:before {
+		content: "{$label global_users_contratistas global_rol_almacen}";
+	}
+				[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="global_rol_contratos"]:before {
+		content: "{$label global_users_contratistas global_rol_contratos}";
+	}
+																																					[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_dep"]:before {
+		content: "{$label global_users_contratistas usr_dep}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_cargo"]:before {
+		content: "{$label global_users_contratistas usr_cargo}";
+	}
+				[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_extension"]:before {
+		content: "{$label global_users_contratistas usr_extension}";
+	}
+				[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_datebirth"]:before {
+		content: "{$label global_users_contratistas usr_datebirth}";
+	}
+											[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="phone"]:before {
+		content: "{$label global_users_contratistas phone}";
+	}
+		}
+</style>
+<table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table table-hover table-bordered r-horizontal-grid  r-flexgrid rnr-b-grid rnr-gridtable"
+	cellpadding="0"
+	data-body-height="1"
+>
+						<thead>
+			{BEGIN grid_header}
+			
+																									<tr {$rowattrs} {$row_grid_0} class="{$rowclass}
+									{$gridHeader_class}
+					
+								r-gridrow
+							">
+									{BEGIN cellblock_grid_headcell_icons}
+	<th
+	
+	{$cell_grid_headcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="global_users_contratistas_list"		data-control-cell
+	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_icons}
+									{BEGIN cellblock_grid_headcell_checkbox}
+	<th
+	
+	{$cell_grid_headcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="global_users_contratistas_list"	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox_head" data-itemid="grid_checkbox_head" {$item_grid_checkbox_head} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkboxheader_attrs}>
+</span>
+{END checkbox_column}
+	
+	</th>
+	{END cellblock_grid_headcell_checkbox}
+									{BEGIN cellblock_grid_headcell_field}
+	<th
+	
+	{$cell_grid_headcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$Username_class}	"
+
+			data-field="Username"
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN Username_fieldheadercolumn}
+	{BEGIN Username_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Username" data-fieldname="Username" 
+
+			{$Username_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label global_users_contratistas Username }</span>
+					{$arrow_icon_Username}
+			</span>
+	</span>
+	{END Username_fieldheader}
+{END Username_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+									{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$usr_email_class}	"
+
+			data-field="usr_email"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN usr_email_fieldheadercolumn}
+	{BEGIN usr_email_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_email" data-fieldname="usr_email" 
+
+			{$usr_email_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label global_users_contratistas usr_email }</span>
+					{$arrow_icon_usr_email}
+			</span>
+	</span>
+	{END usr_email_fieldheader}
+{END usr_email_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+									{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$usr_name_class}	"
+
+			data-field="usr_name"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN usr_name_fieldheadercolumn}
+	{BEGIN usr_name_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_name" data-fieldname="usr_name" 
+
+			{$usr_name_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label global_users_contratistas usr_name }</span>
+					{$arrow_icon_usr_name}
+			</span>
+	</span>
+	{END usr_name_fieldheader}
+{END usr_name_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+									{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$usr_lname_class}	"
+
+			data-field="usr_lname"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN usr_lname_fieldheadercolumn}
+	{BEGIN usr_lname_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_lname" data-fieldname="usr_lname" 
+
+			{$usr_lname_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label global_users_contratistas usr_lname }</span>
+					{$arrow_icon_usr_lname}
+			</span>
+	</span>
+	{END usr_lname_fieldheader}
+{END usr_lname_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
+									{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$usr_personalid_class}	"
+
+			data-field="usr_personalid"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN usr_personalid_fieldheadercolumn}
+	{BEGIN usr_personalid_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_personalid" data-fieldname="usr_personalid" 
+
+			{$usr_personalid_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label global_users_contratistas usr_personalid }</span>
+					{$arrow_icon_usr_personalid}
+			</span>
+	</span>
+	{END usr_personalid_fieldheader}
+{END usr_personalid_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
+									{BEGIN cellblock_grid_headcell_field5}
+	<th
+	
+	{$cell_grid_headcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$global_rol_almacen_class}	"
+
+			data-field="global_rol_almacen"
+	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN global_rol_almacen_fieldheadercolumn}
+	{BEGIN global_rol_almacen_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field29" {$item_simple_grid_field29} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="global_rol_almacen" data-fieldname="global_rol_almacen" 
+
+			{$global_rol_almacen_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label global_users_contratistas global_rol_almacen }</span>
+					{$arrow_icon_global_rol_almacen}
+			</span>
+	</span>
+	{END global_rol_almacen_fieldheader}
+{END global_rol_almacen_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
+									{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$global_rol_contratos_class}	"
+
+			data-field="global_rol_contratos"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN global_rol_contratos_fieldheadercolumn}
+	{BEGIN global_rol_contratos_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field31" {$item_simple_grid_field31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="global_rol_contratos" data-fieldname="global_rol_contratos" 
+
+			{$global_rol_contratos_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label global_users_contratistas global_rol_contratos }</span>
+					{$arrow_icon_global_rol_contratos}
+			</span>
+	</span>
+	{END global_rol_contratos_fieldheader}
+{END global_rol_contratos_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
+									{BEGIN cellblock_grid_headcell_field10}
+	<th
+	
+	{$cell_grid_headcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$usr_dep_class}	"
+
+			data-field="usr_dep"
+	
+	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN usr_dep_fieldheadercolumn}
+	{BEGIN usr_dep_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field67" {$item_simple_grid_field67} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_dep" data-fieldname="usr_dep" 
+
+			{$usr_dep_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label global_users_contratistas usr_dep }</span>
+					{$arrow_icon_usr_dep}
+			</span>
+	</span>
+	{END usr_dep_fieldheader}
+{END usr_dep_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field10}
+									{BEGIN cellblock_grid_headcell_field11}
+	<th
+	
+	{$cell_grid_headcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$usr_cargo_class}	"
+
+			data-field="usr_cargo"
+	
+	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN usr_cargo_fieldheadercolumn}
+	{BEGIN usr_cargo_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field69" {$item_simple_grid_field69} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_cargo" data-fieldname="usr_cargo" 
+
+			{$usr_cargo_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label global_users_contratistas usr_cargo }</span>
+					{$arrow_icon_usr_cargo}
+			</span>
+	</span>
+	{END usr_cargo_fieldheader}
+{END usr_cargo_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field11}
+									{BEGIN cellblock_grid_headcell_field12}
+	<th
+	
+	{$cell_grid_headcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$usr_extension_class}	"
+
+			data-field="usr_extension"
+	
+	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN usr_extension_fieldheadercolumn}
+	{BEGIN usr_extension_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field71" {$item_simple_grid_field71} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_extension" data-fieldname="usr_extension" 
+
+			{$usr_extension_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label global_users_contratistas usr_extension }</span>
+					{$arrow_icon_usr_extension}
+			</span>
+	</span>
+	{END usr_extension_fieldheader}
+{END usr_extension_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field12}
+									{BEGIN cellblock_grid_headcell_field13}
+	<th
+	
+	{$cell_grid_headcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$usr_datebirth_class}	"
+
+			data-field="usr_datebirth"
+	
+	data-cellId="grid_headcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN usr_datebirth_fieldheadercolumn}
+	{BEGIN usr_datebirth_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field72" {$item_simple_grid_field72} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_datebirth" data-fieldname="usr_datebirth" 
+
+			{$usr_datebirth_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label global_users_contratistas usr_datebirth }</span>
+					{$arrow_icon_usr_datebirth}
+			</span>
+	</span>
+	{END usr_datebirth_fieldheader}
+{END usr_datebirth_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field13}
+									{BEGIN cellblock_grid_headcell_field17}
+	<th
+	
+	{$cell_grid_headcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$phone_class}	"
+
+			data-field="phone"
+	
+	data-cellId="grid_headcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN phone_fieldheadercolumn}
+	{BEGIN phone_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="phone" data-fieldname="phone" 
+
+			{$phone_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label global_users_contratistas phone }</span>
+					{$arrow_icon_phone}
+			</span>
+	</span>
+	{END phone_fieldheader}
+{END phone_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field17}
+							</tr>
+															
+					{END grid_header}
+			</thead>
+															<tbody>
+					{BEGIN grid_row}
+							
+																														<tr {$rowattrs} {$row_grid_1} class="{$rowclass}
+				
+								r-gridrow
+							">
+									{BEGIN cellblock_grid_cell_icons}
+	<td
+	
+	{$cell_grid_cell_icons}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="global_users_contratistas_list"		data-control-cell
+	
+	>
+
+	 
+		{BEGIN edit_column}
+{BEGIN edit_link}
+<span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Editar" class="btn btn-default   
+	" href="global_users_contratistas_edit.php?{$editlink}" {$editlink_attrs} title="Editar" data-popup >
+					<span class="fa fa-pencil-square"></span>
+							 Editar			</a>
+</span>
+{END edit_link}
+{END edit_column}
+	 
+		{BEGIN view_column}
+{BEGIN view_link}
+<span data-itemtype="grid_view" data-itemid="grid_view" {$item_grid_view} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Ver registro" class="btn btn-default   
+	" href="global_users_contratistas_view.php?{$editlink}" {$viewlink_attrs} title="Ver" data-popup >
+					<span class="glyphicon glyphicon-search"></span>
+										</a>
+</span>
+{END view_link}
+{END view_column}
+	
+	</td>
+	{END cellblock_grid_cell_icons}
+									{BEGIN cellblock_grid_cell_checkbox}
+	<td
+	
+	{$cell_grid_cell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"		data-control-cell
+	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox" data-itemid="grid_checkbox" {$item_grid_checkbox} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkbox_attrs}
+		>
+</span>	
+{END checkbox_column}
+	
+	</td>
+	{END cellblock_grid_cell_checkbox}
+									{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$Username_class}	"
+
+			data-field="Username"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN Username_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Username" data-fieldname="Username" data-default-width >
+{$Username_value}
+</span>
+{END Username_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+									{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$usr_email_class}	"
+
+			data-field="usr_email"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN usr_email_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_email" data-fieldname="usr_email" data-default-width >
+{$usr_email_value}
+</span>
+{END usr_email_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+									{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$usr_name_class}	"
+
+			data-field="usr_name"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN usr_name_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_name" data-fieldname="usr_name" data-default-width >
+{$usr_name_value}
+</span>
+{END usr_name_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+									{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$usr_lname_class}	"
+
+			data-field="usr_lname"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN usr_lname_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_lname" data-fieldname="usr_lname" data-default-width >
+{$usr_lname_value}
+</span>
+{END usr_lname_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+									{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$usr_personalid_class}	"
+
+			data-field="usr_personalid"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN usr_personalid_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_personalid" data-fieldname="usr_personalid" data-default-width >
+{$usr_personalid_value}
+</span>
+{END usr_personalid_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+									{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$global_rol_almacen_class}	"
+
+			data-field="global_rol_almacen"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN global_rol_almacen_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field28" {$item_simple_grid_field28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="global_rol_almacen" data-fieldname="global_rol_almacen" data-default-width >
+{$global_rol_almacen_value}
+</span>
+{END global_rol_almacen_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+									{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$global_rol_contratos_class}	"
+
+			data-field="global_rol_contratos"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN global_rol_contratos_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field30" {$item_simple_grid_field30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="global_rol_contratos" data-fieldname="global_rol_contratos" data-default-width >
+{$global_rol_contratos_value}
+</span>
+{END global_rol_contratos_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+									{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$usr_dep_class}	"
+
+			data-field="usr_dep"
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN usr_dep_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field65" {$item_simple_grid_field65} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_dep" data-fieldname="usr_dep" data-default-width >
+{$usr_dep_value}
+</span>
+{END usr_dep_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field10}
+									{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$usr_cargo_class}	"
+
+			data-field="usr_cargo"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN usr_cargo_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field66" {$item_simple_grid_field66} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_cargo" data-fieldname="usr_cargo" data-default-width >
+{$usr_cargo_value}
+</span>
+{END usr_cargo_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+									{BEGIN cellblock_grid_cell_field12}
+	<td
+	
+	{$cell_grid_cell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$usr_extension_class}	"
+
+			data-field="usr_extension"
+	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN usr_extension_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field68" {$item_simple_grid_field68} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_extension" data-fieldname="usr_extension" data-default-width >
+{$usr_extension_value}
+</span>
+{END usr_extension_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field12}
+									{BEGIN cellblock_grid_cell_field13}
+	<td
+	
+	{$cell_grid_cell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$usr_datebirth_class}	"
+
+			data-field="usr_datebirth"
+	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN usr_datebirth_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field70" {$item_simple_grid_field70} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_datebirth" data-fieldname="usr_datebirth" data-default-width >
+{$usr_datebirth_value}
+</span>
+{END usr_datebirth_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field13}
+									{BEGIN cellblock_grid_cell_field17}
+	<td
+	
+	{$cell_grid_cell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$phone_class}	"
+
+			data-field="phone"
+	
+	data-cellId="grid_cell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN phone_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="phone" data-fieldname="phone" data-default-width >
+{$phone_value}
+</span>
+{END phone_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field17}
+							</tr>
+										
+											{END grid_row}
+					</tbody>
+													<tfoot>
+			
+																																			<tr {$rowattrs} {$row_grid_2} class="{$rowclass}
+									{$gridFooter_class}
+					
+								r-gridrow
+							">
+									{BEGIN cellblock_grid_footcell_icons}
+	<td
+	
+	{$cell_grid_footcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_icons}
+									{BEGIN cellblock_grid_footcell_checkbox}
+	<td
+	
+	{$cell_grid_footcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_checkbox}
+									{BEGIN cellblock_grid_footcell_field}
+	<td
+	
+	{$cell_grid_footcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$Username_class}	"
+
+	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="global_users_contratistas_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field}
+									{BEGIN cellblock_grid_footcell_field1}
+	<td
+	
+	{$cell_grid_footcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$usr_email_class}	"
+
+	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="global_users_contratistas_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field1}
+									{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$usr_name_class}	"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="global_users_contratistas_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
+									{BEGIN cellblock_grid_footcell_field3}
+	<td
+	
+	{$cell_grid_footcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$usr_lname_class}	"
+
+	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="global_users_contratistas_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field3}
+									{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$usr_personalid_class}	"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="global_users_contratistas_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
+									{BEGIN cellblock_grid_footcell_field5}
+	<td
+	
+	{$cell_grid_footcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$global_rol_almacen_class}	"
+
+	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="global_users_contratistas_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field5}
+									{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$global_rol_contratos_class}	"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="global_users_contratistas_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+									{BEGIN cellblock_grid_footcell_field10}
+	<td
+	
+	{$cell_grid_footcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$usr_dep_class}	"
+
+	
+	data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="global_users_contratistas_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field10}
+									{BEGIN cellblock_grid_footcell_field11}
+	<td
+	
+	{$cell_grid_footcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$usr_cargo_class}	"
+
+	
+	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="global_users_contratistas_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field11}
+									{BEGIN cellblock_grid_footcell_field12}
+	<td
+	
+	{$cell_grid_footcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$usr_extension_class}	"
+
+	
+	data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="global_users_contratistas_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field12}
+									{BEGIN cellblock_grid_footcell_field13}
+	<td
+	
+	{$cell_grid_footcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$usr_datebirth_class}	"
+
+	
+	data-cellId="grid_footcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="global_users_contratistas_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field13}
+									{BEGIN cellblock_grid_footcell_field17}
+	<td
+	
+	{$cell_grid_footcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$phone_class}	"
+
+	
+	data-cellId="grid_footcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="global_users_contratistas_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field17}
+							</tr>
+					
+					</tfoot>
+				</table>
+{END grid_block}
+	
+			{BEGIN below-grid_outerblock}
+		<div class="panel-footer">
+			{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="r-align-center r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN pagination_block}
+<span data-itemtype="pagination" data-itemid="pagination" {$item_pagination} data-pageid="{$pageid}" >
+{$pagination}
+</span>
+{END pagination_block}
+		</div>					</div>
+			</div>		
+{END below-grid_block}
+		</div>
+	{END below-grid_outerblock}
+		</div>
+
+</div>
+
+
+
+
+										{$footer}
+				</div>
+			</div>
+			<div class="r-body-shadow">
+			</div>
+		</div>
+	{END body}
+	</body>
+</html>

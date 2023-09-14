@@ -1,0 +1,450 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel divipola search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN CODDPTO_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CODDPTO}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CODDPTO{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="CODDPTO" data-fieldname="CODDPTO" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CODDPTO}">
+		{$label divipola CODDPTO }	</label>
+	<div class="r-search-option">
+		{$searchtype_CODDPTO}
+	</div>
+	<div class="r-search-field">
+		{$CODDPTO_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CODDPTO_editcontrol1}
+	</div>
+	
+</div>
+
+{END CODDPTO_fieldblock}
+											
+{BEGIN CODMUN_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CODMUN}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CODMUN{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="CODMUN" data-fieldname="CODMUN" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CODMUN}">
+		{$label divipola CODMUN }	</label>
+	<div class="r-search-option">
+		{$searchtype_CODMUN}
+	</div>
+	<div class="r-search-field">
+		{$CODMUN_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CODMUN_editcontrol1}
+	</div>
+	
+</div>
+
+{END CODMUN_fieldblock}
+											
+{BEGIN CODCENTPOBLADO_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CODCENTPOBLADO}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CODCENTPOBLADO{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="CODCENTPOBLADO" data-fieldname="CODCENTPOBLADO" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CODCENTPOBLADO}">
+		{$label divipola CODCENTPOBLADO }	</label>
+	<div class="r-search-option">
+		{$searchtype_CODCENTPOBLADO}
+	</div>
+	<div class="r-search-field">
+		{$CODCENTPOBLADO_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CODCENTPOBLADO_editcontrol1}
+	</div>
+	
+</div>
+
+{END CODCENTPOBLADO_fieldblock}
+											
+{BEGIN NOMDPTO_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_NOMDPTO}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="NOMDPTO{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="NOMDPTO" data-fieldname="NOMDPTO" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_NOMDPTO}">
+		{$label divipola NOMDPTO }	</label>
+	<div class="r-search-option">
+		{$searchtype_NOMDPTO}
+	</div>
+	<div class="r-search-field">
+		{$NOMDPTO_editcontrol}	</div>
+	<div class="r-search-field">
+		{$NOMDPTO_editcontrol1}
+	</div>
+	
+</div>
+
+{END NOMDPTO_fieldblock}
+											
+{BEGIN NOMMUNICIPIO_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_NOMMUNICIPIO}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="NOMMUNICIPIO{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="NOMMUNICIPIO" data-fieldname="NOMMUNICIPIO" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_NOMMUNICIPIO}">
+		{$label divipola NOMMUNICIPIO }	</label>
+	<div class="r-search-option">
+		{$searchtype_NOMMUNICIPIO}
+	</div>
+	<div class="r-search-field">
+		{$NOMMUNICIPIO_editcontrol}	</div>
+	<div class="r-search-field">
+		{$NOMMUNICIPIO_editcontrol1}
+	</div>
+	
+</div>
+
+{END NOMMUNICIPIO_fieldblock}
+											
+{BEGIN NOMCENTPOBLADO_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_NOMCENTPOBLADO}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="NOMCENTPOBLADO{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="NOMCENTPOBLADO" data-fieldname="NOMCENTPOBLADO" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_NOMCENTPOBLADO}">
+		{$label divipola NOMCENTPOBLADO }	</label>
+	<div class="r-search-option">
+		{$searchtype_NOMCENTPOBLADO}
+	</div>
+	<div class="r-search-field">
+		{$NOMCENTPOBLADO_editcontrol}	</div>
+	<div class="r-search-field">
+		{$NOMCENTPOBLADO_editcontrol1}
+	</div>
+	
+</div>
+
+{END NOMCENTPOBLADO_fieldblock}
+											
+{BEGIN TIPOCENTPOBLADO_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TIPOCENTPOBLADO}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="TIPOCENTPOBLADO{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="TIPOCENTPOBLADO" data-fieldname="TIPOCENTPOBLADO" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_TIPOCENTPOBLADO}">
+		{$label divipola TIPOCENTPOBLADO }	</label>
+	<div class="r-search-option">
+		{$searchtype_TIPOCENTPOBLADO}
+	</div>
+	<div class="r-search-field">
+		{$TIPOCENTPOBLADO_editcontrol}	</div>
+	<div class="r-search-field">
+		{$TIPOCENTPOBLADO_editcontrol1}
+	</div>
+	
+</div>
+
+{END TIPOCENTPOBLADO_fieldblock}
+											
+{BEGIN LON_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_LON}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="LON{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="LON" data-fieldname="LON" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_LON}">
+		{$label divipola LON }	</label>
+	<div class="r-search-option">
+		{$searchtype_LON}
+	</div>
+	<div class="r-search-field">
+		{$LON_editcontrol}	</div>
+	<div class="r-search-field">
+		{$LON_editcontrol1}
+	</div>
+	
+</div>
+
+{END LON_fieldblock}
+											
+{BEGIN F9_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_F9}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="F9{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="F9" data-fieldname="F9" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_F9}">
+		{$label divipola F9 }	</label>
+	<div class="r-search-option">
+		{$searchtype_F9}
+	</div>
+	<div class="r-search-field">
+		{$F9_editcontrol}	</div>
+	<div class="r-search-field">
+		{$F9_editcontrol1}
+	</div>
+	
+</div>
+
+{END F9_fieldblock}
+											
+{BEGIN LAT_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_LAT}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="LAT{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="LAT" data-fieldname="LAT" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_LAT}">
+		{$label divipola LAT }	</label>
+	<div class="r-search-option">
+		{$searchtype_LAT}
+	</div>
+	<div class="r-search-field">
+		{$LAT_editcontrol}	</div>
+	<div class="r-search-field">
+		{$LAT_editcontrol1}
+	</div>
+	
+</div>
+
+{END LAT_fieldblock}
+											
+{BEGIN DISTRITO_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DISTRITO}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="DISTRITO{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="DISTRITO" data-fieldname="DISTRITO" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_DISTRITO}">
+		{$label divipola DISTRITO }	</label>
+	<div class="r-search-option">
+		{$searchtype_DISTRITO}
+	</div>
+	<div class="r-search-field">
+		{$DISTRITO_editcontrol}	</div>
+	<div class="r-search-field">
+		{$DISTRITO_editcontrol1}
+	</div>
+	
+</div>
+
+{END DISTRITO_fieldblock}
+											
+{BEGIN TIPOMUN_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TIPOMUN}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="TIPOMUN{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="TIPOMUN" data-fieldname="TIPOMUN" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_TIPOMUN}">
+		{$label divipola TIPOMUN }	</label>
+	<div class="r-search-option">
+		{$searchtype_TIPOMUN}
+	</div>
+	<div class="r-search-field">
+		{$TIPOMUN_editcontrol}	</div>
+	<div class="r-search-field">
+		{$TIPOMUN_editcontrol1}
+	</div>
+	
+</div>
+
+{END TIPOMUN_fieldblock}
+											
+{BEGIN AREAMETRO_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_AREAMETRO}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="AREAMETRO{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="AREAMETRO" data-fieldname="AREAMETRO" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_AREAMETRO}">
+		{$label divipola AREAMETRO }	</label>
+	<div class="r-search-option">
+		{$searchtype_AREAMETRO}
+	</div>
+	<div class="r-search-field">
+		{$AREAMETRO_editcontrol}	</div>
+	<div class="r-search-field">
+		{$AREAMETRO_editcontrol1}
+	</div>
+	
+</div>
+
+{END AREAMETRO_fieldblock}
+											
+{BEGIN CENSO_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CENSO}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CENSO{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="CENSO" data-fieldname="CENSO" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CENSO}">
+		{$label divipola CENSO }	</label>
+	<div class="r-search-option">
+		{$searchtype_CENSO}
+	</div>
+	<div class="r-search-field">
+		{$CENSO_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CENSO_editcontrol1}
+	</div>
+	
+</div>
+
+{END CENSO_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} data-page=undefined >
+							Buscar			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
